@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LumiLedger — Brochure</title>
+  <meta name="description" content="How LumiLedger works, comparison matrix, security, and downloads." />
+  <meta property="og:title" content="LumiLedger — Brochure" />
+  <meta property="og:description" content="Bank feeds to clean financials & KPIs, fast." />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="theme-color" content="#101010" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <svg class="bg-etch swoosh-heavy" viewBox="0 0 1600 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="swooshMain" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.22)" />
+        <stop offset="40%" stop-color="rgba(255,255,255,0.16)" />
+        <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+      </linearGradient>
+      <linearGradient id="swooshAlt" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.18)" />
+        <stop offset="45%" stop-color="rgba(255,255,255,0.12)" />
+        <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#swooshMain)" stroke-width="2">
+      <path d="M-300 120 C420 360, 900 -80, 1600 240" />
+      <path d="M-300 400 C560 680, 1100 200, 1600 520" />
+      <path d="M-300 700 C700 1040, 1280 480, 1600 880" />
+    </g>
+    <g fill="none" stroke="url(#swooshAlt)" stroke-width="1.8">
+      <path d="M-250 260 C420 500, 960 120, 1600 360" />
+      <path d="M-250 560 C600 860, 1200 340, 1600 640" />
+      <path d="M-250 860 C820 1180, 1400 620, 1600 960" />
+    </g>
+    <g fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.2">
+      <path d="M-200 480 C520 780, 1100 360, 1600 660" />
+      <path d="M-200 760 C740 1100, 1360 560, 1600 940" />
+    </g>
+  </svg>
+
+  <nav class="splash-navbar fullwidth">
+    <div class="nav-left">
+      <img src="/assets/lumiledger-logo.png" alt="LumiLedger Logo" class="logo-left" />
+      <a href="#top" class="brand" aria-label="LumiLedger">LUMILEDGER</a>
+    </div>
+    <div class="nav-right">
+      <a href="#how-it-works" class="nav-link">How it works</a>
+      <a href="#comparison" class="nav-link">Comparison</a>
+      <a href="#security" class="nav-link">Security</a>
+      <a href="#downloads" class="btn btn-nav">Downloads</a>
+    </div>
+  </nav>
+
+  <main id="top" class="splash-scroll hide-scrollbar">
+    <header id="hero" class="section hero reveal">
+      <div class="hero-fullwidth">
+        <h1 class="hero-title">Bank feeds to clean financials & KPIs, fast.</h1>
+        <p class="hero-subtitle">Link+Load → Transactions → General Ledger. Lender-ready exports built in.</p>
+        <div class="cta-row">
+          <a href="#how-it-works" class="btn btn-primary">See how it works</a>
+          <a href="#comparison" class="btn btn-secondary">Compare to market</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="how-it-works" class="section alt reveal">
+      <div class="section-inner centered">
+        <h2 class="section-title">How LumiLedger works</h2>
+        <div class="rail clean">
+          <div class="rail-card">
+            <h3 class="rail-title">Link + Load</h3>
+            <p class="rail-text">Connect accounts or upload statements. We normalize raw data without hassles.</p>
+          </div>
+          <div class="rail-card">
+            <h3 class="rail-title">Transactions</h3>
+            <p class="rail-text">Clean memo, auto-classification with memory, and quick bulk edits. Export anytime.</p>
+          </div>
+          <div class="rail-card">
+            <h3 class="rail-title">General Ledger</h3>
+            <p class="rail-text">Two-sided entries and running balances per account. Statements and KPIs roll up automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section reveal">
+      <div class="section-inner centered">
+        <h2 class="section-title">Market player comparison</h2>
+        <p class="section-body">A quick look at how LumiLedger stacks up against common tools.</p>
+
+        <div class="table-tools">
+          <input id="filterInput" class="filter-input" type="text" placeholder="Filter by product or feature" aria-label="Filter table" />
+          <div class="tool-buttons">
+            <button id="sortProduct" class="btn btn-nav-ghost">Sort by product</button>
+            <button id="downloadCsv" class="btn btn-nav-ghost">Download CSV</button>
+            <a href="/downloads/comparison.pdf" class="btn btn-nav-ghost">Download PDF</a>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table id="matrix" class="matrix">
+            <thead>
+              <tr>
+                <th data-key="product">Product</th>
+                <th data-key="automation">Automation</th>
+                <th data-key="vendorMemory">Vendor memory</th>
+                <th data-key="ledger">Two-sided GL</th>
+                <th data-key="export">Lender-ready export</th>
+                <th data-key="notes">Notes</th>
+              </tr>
+            </thead>
+            <tbody id="matrixBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="section alt reveal">
+      <div class="section-inner centered narrow">
+        <h2 class="section-title">Security & infrastructure</h2>
+        <p class="section-body">
+          Authentication, least-privilege access, and isolated processing for uploads. We design for clarity and control so your data stays protected.
+        </p>
+      </div>
+    </section>
+
+    <section id="downloads" class="section reveal">
+      <div class="section-inner centered narrow">
+        <h2 class="section-title">Downloads</h2>
+        <div class="downloads">
+          <a class="btn btn-primary" href="/downloads/one-pager.pdf" download>One-pager (PDF)</a>
+          <a class="btn btn-secondary" href="/downloads/deck.pdf" download>Slide deck (PDF)</a>
+        </div>
+        <p class="small-note">If downloads aren’t attached yet, drop your PDFs into <code>/downloads</code> using the same names.</p>
+      </div>
+    </section>
+
+    <footer id="footer" class="section footer reveal">
+      <div class="section-inner centered narrow">
+        <p class="footer-copy">&copy; <span id="yr"></span> LumiLedger. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/main.js"></script>
+</body>
+</html>
