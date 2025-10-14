@@ -84,7 +84,7 @@ body{
 .matrix th,.matrix td{padding:.7rem .85rem;border-bottom:1px solid var(--line);text-align:left}
 .matrix thead th{background:#f3f4f6;font-weight:800;position:sticky;top:0}
 
-/* Footer (brand left, back-to-top right; centered website + contact + ©) */
+/* Footer (brand left, back-to-top right; website centered, contact + © left-aligned in middle column) */
 .foot{padding:28px 22px;background:#fff;border-top:1px solid var(--line)}
 .foot-inner{max-width:1100px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
 .foot-site{font-weight:900;text-decoration:none;color:var(--ink)}
@@ -95,21 +95,22 @@ body{
   width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr auto;
-  align-items:center;             /* center all three columns vertically */
+  align-items:center;
   gap:12px;
-  min-height:64px;                /* ensures consistent vertical centering */
+  min-height:64px;
 }
 .foot-brand{display:flex;align-items:center;gap:10px;justify-self:start}
 .foot-badge{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--ink);border-radius:8px}
 .foot-badge img{height:28px;width:auto;display:block}
 .foot-word{font-weight:900;letter-spacing:.06em}
 
-/* Center column (Contact + © centered as a unit) */
+/* Center column: left-align its contents */
 .foot-center{
   justify-self:center;
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:flex-start;   /* left align */
+  text-align:left;          /* left align text */
   gap:4px;
   line-height:1.25;
 }
@@ -133,5 +134,6 @@ body{
   .cards{grid-template-columns:1fr}
   .pillars-band{grid-template-columns:1fr}
   .foot-mid{grid-template-columns:1fr;row-gap:10px;min-height:auto}
+  .foot-center{align-items:center;text-align:center} /* center on mobile */
   .backtotop{justify-self:center}
 }
