@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LumiLedger - Automated accounting through direct bank integration. Link, Load, and Let it flow.">
+    <title>LumiLedger - Modern Accounting Made Simple</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="hero-title">LumiLedger</h1>
+            <p class="hero-subtitle">Modern Accounting Made Simple</p>
+            <p class="hero-tagline">Link your accounts. Load your transactions. Let your ledger flow.</p>
+            <div class="hero-cta">
+                <a href="#downloads" class="btn btn-primary">Get Started</a>
+                <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Link + Load</h3>
+                    <p class="step-description">Connect your bank accounts and credit cards securely. Your transactions are automatically imported in real-time.</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Transactions</h3>
+                    <p class="step-description">Review and categorize your transactions. Machine learning suggests categories based on your patterns.</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">General Ledger</h3>
+                    <p class="step-description">Your general ledger updates automatically. Generate financial statements with a single click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Matrix Section -->
+    <section id="comparison" class="comparison">
+        <div class="container">
+            <h2 class="section-title">Why Choose LumiLedger?</h2>
+            <div class="comparison-controls">
+                <button id="download-csv" class="btn btn-small">Download CSV</button>
+                <button id="download-pdf" class="btn btn-small">Download PDF</button>
+            </div>
+            <div class="table-wrapper">
+                <table id="comparison-table" class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="feature" class="sortable">Feature <span class="sort-icon"></span></th>
+                            <th data-sort="lumiledger" class="sortable">LumiLedger <span class="sort-icon"></span></th>
+                            <th data-sort="traditional" class="sortable">Traditional Software <span class="sort-icon"></span></th>
+                            <th data-sort="other" class="sortable">Other Solutions <span class="sort-icon"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-body">
+                        <!-- Data loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section id="who-its-for" class="who-its-for">
+        <div class="container">
+            <h2 class="section-title">Who It's For</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <h3 class="audience-title">Small Businesses</h3>
+                    <p class="audience-description">Streamline your bookkeeping without hiring a full-time accountant. Focus on growing your business, not managing spreadsheets.</p>
+                </div>
+                <div class="audience-card">
+                    <h3 class="audience-title">Freelancers</h3>
+                    <p class="audience-description">Track income and expenses effortlessly. Generate professional reports for tax time in minutes, not hours.</p>
+                </div>
+                <div class="audience-card">
+                    <h3 class="audience-title">Startups</h3>
+                    <p class="audience-description">Get enterprise-grade accounting from day one. Scale your financial operations as you grow without changing systems.</p>
+                </div>
+                <div class="audience-card">
+                    <h3 class="audience-title">Accountants</h3>
+                    <p class="audience-description">Serve more clients with automated data entry. Spend time on analysis and strategy, not data entry and reconciliation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <h2 class="section-title">Bank-Level Security</h2>
+            <div class="security-features">
+                <div class="security-feature">
+                    <h3 class="feature-title">256-bit Encryption</h3>
+                    <p class="feature-description">All data is encrypted in transit and at rest using industry-standard AES-256 encryption.</p>
+                </div>
+                <div class="security-feature">
+                    <h3 class="feature-title">Read-Only Access</h3>
+                    <p class="feature-description">We can only read your transaction data. We never have the ability to move money or initiate transfers.</p>
+                </div>
+                <div class="security-feature">
+                    <h3 class="feature-title">SOC 2 Compliant</h3>
+                    <p class="feature-description">Our infrastructure meets the highest standards for security, availability, and confidentiality.</p>
+                </div>
+                <div class="security-feature">
+                    <h3 class="feature-title">Your Data, Your Control</h3>
+                    <p class="feature-description">Export your data anytime. Delete your account and all data permanently with one click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Transform Your Accounting?</h2>
+            <p class="cta-description">Join thousands of businesses that have automated their bookkeeping with LumiLedger.</p>
+            <a href="#downloads" class="btn btn-primary btn-large">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="downloads">
+        <div class="container">
+            <h2 class="section-title">Downloads & Resources</h2>
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <h3 class="download-title">Product Overview</h3>
+                    <p class="download-description">Comprehensive guide to LumiLedger features and capabilities.</p>
+                    <a href="downloads/lumiledger-overview.pdf" class="btn btn-download" download>Download PDF</a>
+                </div>
+                <div class="download-card">
+                    <h3 class="download-title">Quick Start Guide</h3>
+                    <p class="download-description">Get up and running with LumiLedger in under 5 minutes.</p>
+                    <a href="downloads/quick-start-guide.pdf" class="btn btn-download" download>Download PDF</a>
+                </div>
+                <div class="download-card">
+                    <h3 class="download-title">Security Whitepaper</h3>
+                    <p class="download-description">Detailed information about our security practices and compliance.</p>
+                    <a href="downloads/security-whitepaper.pdf" class="btn btn-download" download>Download PDF</a>
+                </div>
+                <div class="download-card">
+                    <h3 class="download-title">API Documentation</h3>
+                    <p class="download-description">Technical documentation for developers integrating with LumiLedger.</p>
+                    <a href="downloads/api-documentation.pdf" class="btn btn-download" download>Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 LumiLedger. All rights reserved.</p>
+            <p class="footer-text">No tracking. No cookies. Just clean, simple accounting.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

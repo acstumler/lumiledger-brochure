@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "Data Entry Method",
+    "lumiledger": "Link + Load from bank/card",
+    "traditional": "Manual entry required",
+    "other": "Manual or CSV import"
+  },
+  {
+    "feature": "Transaction Sync",
+    "lumiledger": "Real-time automatic",
+    "traditional": "Manual reconciliation",
+    "other": "Periodic sync"
+  },
+  {
+    "feature": "General Ledger",
+    "lumiledger": "Auto-generated from transactions",
+    "traditional": "Manual posting",
+    "other": "Semi-automated"
+  },
+  {
+    "feature": "Time to Setup",
+    "lumiledger": "< 5 minutes",
+    "traditional": "Hours to days",
+    "other": "30-60 minutes"
+  },
+  {
+    "feature": "Learning Curve",
+    "lumiledger": "Minimal",
+    "traditional": "Steep",
+    "other": "Moderate"
+  },
+  {
+    "feature": "Cost",
+    "lumiledger": "Free / Low-cost",
+    "traditional": "High (software + accountant)",
+    "other": "Subscription-based"
+  },
+  {
+    "feature": "Security",
+    "lumiledger": "Bank-level encryption",
+    "traditional": "Varies",
+    "other": "Standard encryption"
+  },
+  {
+    "feature": "Reporting",
+    "lumiledger": "Real-time dashboards",
+    "traditional": "Periodic reports",
+    "other": "Scheduled reports"
+  },
+  {
+    "feature": "Audit Trail",
+    "lumiledger": "Complete & automatic",
+    "traditional": "Manual",
+    "other": "Partial automation"
+  },
+  {
+    "feature": "Multi-user Support",
+    "lumiledger": "Yes",
+    "traditional": "Limited",
+    "other": "Yes (tiered pricing)"
+  }
+]
