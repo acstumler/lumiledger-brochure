@@ -84,39 +84,41 @@ body{
 .matrix th,.matrix td{padding:.7rem .85rem;border-bottom:1px solid var(--line);text-align:left}
 .matrix thead th{background:#f3f4f6;font-weight:800;position:sticky;top:0}
 
-/* Footer (brand left, back-to-top right; center website + contact + ©) */
+/* Footer (brand left, back-to-top right; centered website + contact + ©) */
 .foot{padding:28px 22px;background:#fff;border-top:1px solid var(--line)}
 .foot-inner{max-width:1100px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
 .foot-site{font-weight:900;text-decoration:none;color:var(--ink)}
 .foot-site:hover{text-decoration:underline}
 
-/* middle row grid */
+/* Middle row */
 .foot-mid{
   width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr auto;
-  align-items:center;
+  align-items:center;             /* center all three columns vertically */
   gap:12px;
+  min-height:64px;                /* ensures consistent vertical centering */
 }
 .foot-brand{display:flex;align-items:center;gap:10px;justify-self:start}
 .foot-badge{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--ink);border-radius:8px}
 .foot-badge img{height:28px;width:auto;display:block}
 .foot-word{font-weight:900;letter-spacing:.06em}
 
-/* center column */
+/* Center column (Contact + © centered as a unit) */
 .foot-center{
   justify-self:center;
   display:flex;
   flex-direction:column;
   align-items:center;
   gap:4px;
+  line-height:1.25;
 }
 .foot-contact{color:var(--muted);font-weight:700}
 .foot-contact a{color:var(--ink);text-decoration:none}
 .foot-contact a:hover{text-decoration:underline}
 .foot-copy{color:var(--muted)}
 
-/* right button */
+/* Right column */
 .backtotop{justify-self:end;display:inline-flex;align-items:center;gap:6px;padding:.55rem .85rem;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:800;cursor:pointer}
 .backtotop:hover{background:#f5f5f7}
 
@@ -130,6 +132,6 @@ body{
   .wins-grid{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .pillars-band{grid-template-columns:1fr}
-  .foot-mid{grid-template-columns:1fr;row-gap:10px}
+  .foot-mid{grid-template-columns:1fr;row-gap:10px;min-height:auto}
   .backtotop{justify-self:center}
 }
