@@ -1,7 +1,7 @@
-Product,Automation,Vendor memory,Two-sided GL,Lender-ready export,Notes
-QuickBooks,Rules only,Limited,Partial,Export,General SMB accounting
-Xero,Rules only,Limited,Partial,Export,Strong multi-currency
-Zoho Books,Rules only,Basic,Partial,Export,Suite-driven
-FreshBooks,Rules only,None,No,Export,Invoicing-first
-Wave,Rules only,None,No,Export,Free tier focus
-LumiLedger,Rules + memory + assist,Yes,Yes,One-click lender pack,From raw data to statements fast
+Product,Automation,Vendor memory,Two-sided GL,Exports,Notes
+QuickBooks,Rules only,Limited,Partial,CSV/XLSX/PDF,Full accounting suite; setup & maintenance required
+Xero,Rules only,Limited,Partial,CSV/XLSX/PDF,Cloud-first suite; strong multi-currency; rules/reconciliations upkeep
+Zoho Books,Rules only,Basic,Partial,CSV/XLSX/PDF,Suite-driven; best when adopting more of Zoho Finance
+FreshBooks,Rules only,None,No,CSV/XLSX/PDF,Invoicing-first; limited back-office depth
+Wave,Rules only,None,No,CSV/XLSX/PDF,Free basics; add-ons for depth; more manual month-end
+LumiLedger,Rules + memory + assist,Yes,Yes,CSV/XLSX/PDF,From raw data to statements & KPIs fast — owner-first

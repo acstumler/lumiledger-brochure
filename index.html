@@ -23,14 +23,16 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section id="overview" class="cover">
     <div class="cover-art" aria-hidden="true"></div>
     <div class="cover-copy invert">
       <h1>From raw bank data into clear financial statements and KPIs, instantly.</h1>
-      <p>Link accounts or upload PDFs, clean transactions display, memory and AI workflow account classification, balanced financial statements and KPIs without the mess</p>
+      <p>Connect accounts via Plaid or upload statement PDFs, see a clean transactions view, and apply memory + rules with an AI backup to produce balanced financial statements and KPIs—without the mess.</p>
     </div>
   </section>
 
+  <!-- PILLARS (deck-aligned) -->
   <section class="pillars-band">
     <div class="pill">
       <div class="p-title">Dual ingestion</div>
@@ -38,7 +40,7 @@
     </div>
     <div class="pill">
       <div class="p-title">Memory + rules + AI</div>
-      <div class="p-desc">Classification memory and rules handle the common case with an AI backup for new or ambiguous items.</div>
+      <div class="p-desc">We remember how you classify vendors, auto-apply rules, and use AI only when something is new or ambiguous.</div>
     </div>
     <div class="pill">
       <div class="p-title">Balanced auto entries</div>
@@ -46,18 +48,19 @@
     </div>
     <div class="pill">
       <div class="p-title">Real-time outputs</div>
-      <div class="p-desc">P&L, Balance Sheet, Cash Flow, and KPIs update as activity arrives; export on demand.</div>
+      <div class="p-desc">P&L, Balance Sheet, Cash Flow, and KPIs update as activity arrives; export CSV/XLSX/PDF on demand.</div>
     </div>
     <div class="pill">
       <div class="p-title">Owner control</div>
-      <div class="p-desc">Overrule any line or bulk reclass a whole set in seconds—accountant-friendly when needed.</div>
+      <div class="p-desc">Overrule any line or bulk reclass whole sets in seconds—accountant-friendly when needed.</div>
     </div>
     <div class="pill">
       <div class="p-title">Secure by design</div>
-      <div class="p-desc">Firebase Auth, Firestore, and scoped storage; trusted vendors for data and hosting.</div>
+      <div class="p-desc">Firebase Auth, Firestore, scoped storage; trusted vendors for data and hosting.</div>
     </div>
   </section>
 
+  <!-- HOW IT WORKS (unchanged layout, deck language) -->
   <section id="works" class="how">
     <div class="how-title">How it works</div>
     <div class="how-grid">
@@ -69,35 +72,50 @@
       <article class="how-card">
         <div class="how-num">02</div>
         <h3>Transactions</h3>
-        <p>Clean memo, vendor memory, and bulk updates. No cryptic rules to maintain—just fast corrections that stick across uploads.</p>
+        <p>Clean memo, vendor memory + rules, and quick bulk updates. AI helps only when something’s new.</p>
       </article>
       <article class="how-card">
         <div class="how-num">03</div>
         <h3>Financial Statements</h3>
-        <p>Balance Sheet, Income Statement, Cash Flow, and General Ledger build automatically from your transactions with running balances.</p>
+        <p>Balance Sheet, Income Statement, Cash Flow, and General Ledger build automatically with running balances.</p>
       </article>
       <article class="how-card">
         <div class="how-num">04</div>
         <h3>KPIs</h3>
-        <p>Live metrics computed from your statements for instant insight. Filter, compare periods, and export when needed.</p>
+        <p>Live metrics from your statements for instant insight. Filter, compare periods, and export.</p>
       </article>
     </div>
   </section>
 
+  <!-- QUOTE -->
   <section class="pullquote">
     <blockquote>“<strong>Fastest path from raw bank data to clear financial statements &amp; KPIs — owner-first</strong>”</blockquote>
   </section>
 
+  <!-- WHERE WE WIN (same cards, tightened to deck) -->
   <section id="wins" class="wins">
     <h2>Where LumiLedger wins</h2>
     <div class="wins-grid">
-      <div class="win"><h4>Minutes to usable books</h4><p>From raw statements to a balanced GL and exports in a fraction of the time.</p></div>
-      <div class="win"><h4>Memory over rules</h4><p>Learns vendors as you work. Less tinkering, fewer regressions.</p></div>
-      <div class="win"><h4>Statement-first design</h4><p>Built around the GL. Balance Sheet, Income Statement, and Cash Flow flow naturally.</p></div>
-      <div class="win"><h4>Instant exports</h4><p>One-click package for advisors and owners: GL, statements, and CSV extracts.</p></div>
+      <div class="win">
+        <h4>Minutes to clean books</h4>
+        <p>Bank link or PDF → classify → balanced entries → real-time statements & KPIs.</p>
+      </div>
+      <div class="win">
+        <h4>Memory over rules (+ AI)</h4>
+        <p>Rules handle the common case; AI is a backup. Fix outliers instantly with manual overrule or bulk reclass.</p>
+      </div>
+      <div class="win">
+        <h4>Statement-first design</h4>
+        <p>Built around the GL so P&L, Balance Sheet, and Cash Flow flow naturally.</p>
+      </div>
+      <div class="win">
+        <h4>Instant exports</h4>
+        <p>CSV/XLSX/PDF report exports whenever an advisor needs more depth.</p>
+      </div>
     </div>
   </section>
 
+  <!-- COMPARE (structure unchanged; cards read from /data/comparison.csv) -->
   <section id="compare" class="compare">
     <div class="compare-head">
       <h2>Compare to the market</h2>
@@ -107,7 +125,9 @@
         <button id="downloadCsv" class="tool">Download CSV</button>
       </div>
     </div>
+
     <div class="cards" id="cards"></div>
+
     <details class="table-fold">
       <summary>Show raw table</summary>
       <div class="table-wrap">
@@ -128,6 +148,7 @@
     </details>
   </section>
 
+  <!-- DOWNLOADS (unchanged) -->
   <section id="downloads" class="downloads">
     <div class="downloads-inner">
       <h2>Downloads</h2>
