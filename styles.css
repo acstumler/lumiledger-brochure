@@ -29,6 +29,11 @@ body{
   backdrop-filter:saturate(140%) blur(8px);
 }
 .brand-line{display:flex;align-items:center;gap:10px}
+.brand-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:36px; height:36px; background:var(--ink); border-radius:8px;
+}
+.brand-icon{height:26px; width:auto; display:block}
 .brand-word{font-weight:900;letter-spacing:.06em;font-size:1.3rem}
 .brochure-nav{display:flex;gap:14px;align-items:center}
 .brochure-nav a{color:var(--ink);text-decoration:none;font-weight:700}

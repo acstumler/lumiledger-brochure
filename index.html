@@ -16,14 +16,16 @@
 <body>
   <header class="brochure-header">
     <div class="brand-line">
-      <div class="brand-word">LUMILEDGER</div>
+      <span class="brand-badge" aria-hidden="true">
+        <img class="brand-icon" src="/assets/LumiLedgerlogo.png" alt="" />
+      </span>
+      <div class="brand-word" aria-label="LumiLedger">LUMILEDGER</div>
     </div>
     <nav class="brochure-nav">
       <a href="/downloads/brochure.pdf" class="pill" download>Download Brochure</a>
     </nav>
   </header>
 
-  <!-- HERO -->
   <section id="overview" class="cover">
     <div class="cover-art" aria-hidden="true"></div>
     <div class="cover-copy invert">
@@ -36,25 +38,14 @@
     </div>
   </section>
 
-  <!-- STAT BAND -->
   <section class="stat-band">
-    <div class="stat">
-      <div class="n">3</div>
-      <div class="l">steps</div>
-    </div>
+    <div class="stat"><div class="n">3</div><div class="l">steps</div></div>
     <div class="divider"></div>
-    <div class="stat">
-      <div class="n">2-sided</div>
-      <div class="l">general ledger</div>
-    </div>
+    <div class="stat"><div class="n">2-sided</div><div class="l">general ledger</div></div>
     <div class="divider"></div>
-    <div class="stat">
-      <div class="n">1-click</div>
-      <div class="l">export</div>
-    </div>
+    <div class="stat"><div class="n">1-click</div><div class="l">export</div></div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section id="works" class="how">
     <div class="how-title">How it works</div>
     <div class="how-grid">
@@ -81,37 +72,20 @@
     </div>
   </section>
 
-  <!-- QUOTE -->
   <section class="pullquote">
-    <blockquote>
-      “<strong>From raw bank data into clear financial statements and KPIs, instantly.</strong>”
-    </blockquote>
+    <blockquote>“<strong>From raw bank data into clear financial statements and KPIs, instantly.</strong>”</blockquote>
   </section>
 
-  <!-- WINS -->
   <section id="wins" class="wins">
     <h2>Where LumiLedger wins</h2>
     <div class="wins-grid">
-      <div class="win">
-        <h4>Minutes to usable books</h4>
-        <p>From raw statements to a balanced GL and exports in a fraction of the time.</p>
-      </div>
-      <div class="win">
-        <h4>Memory over rules</h4>
-        <p>Learns vendors as you work. Less tinkering, fewer regressions.</p>
-      </div>
-      <div class="win">
-        <h4>Statement-first design</h4>
-        <p>Built around the GL. Balance Sheet, Income Statement, and Cash Flow flow naturally.</p>
-      </div>
-      <div class="win">
-        <h4>Instant exports</h4>
-        <p>One-click package for advisors and owners: GL, statements, and CSV extracts.</p>
-      </div>
+      <div class="win"><h4>Minutes to usable books</h4><p>From raw statements to a balanced GL and exports in a fraction of the time.</p></div>
+      <div class="win"><h4>Memory over rules</h4><p>Learns vendors as you work. Less tinkering, fewer regressions.</p></div>
+      <div class="win"><h4>Statement-first design</h4><p>Built around the GL. Balance Sheet, Income Statement, and Cash Flow flow naturally.</p></div>
+      <div class="win"><h4>Instant exports</h4><p>One-click package for advisors and owners: GL, statements, and CSV extracts.</p></div>
     </div>
   </section>
 
-  <!-- COMPARE -->
   <section id="compare" class="compare">
     <div class="compare-head">
       <h2>Compare to the market</h2>
@@ -121,21 +95,14 @@
         <button id="downloadCsv" class="tool">Download CSV</button>
       </div>
     </div>
-
     <div class="cards" id="cards"></div>
-
     <details class="table-fold">
       <summary>Show raw table</summary>
       <div class="table-wrap">
         <table id="matrix" class="matrix">
           <thead>
             <tr>
-              <th>Product</th>
-              <th>Automation</th>
-              <th>Vendor memory</th>
-              <th>Two-sided GL</th>
-              <th>Exports</th>
-              <th>Notes</th>
+              <th>Product</th><th>Automation</th><th>Vendor memory</th><th>Two-sided GL</th><th>Exports</th><th>Notes</th>
             </tr>
           </thead>
           <tbody id="matrixBody"></tbody>
@@ -144,7 +111,6 @@
     </details>
   </section>
 
-  <!-- DOWNLOADS -->
   <section id="downloads" class="downloads">
     <div class="downloads-inner">
       <h2>Downloads</h2>
