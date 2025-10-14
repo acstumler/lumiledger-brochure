@@ -1,96 +1,12 @@
-:root{
-  --ink:#0e0f11;
-  --paper:#f7f7f8;
-  --muted:#6a6d75;
-  --card:#ffffff;
-  --line:#e7e8ec;
-  --gradA:#7d4dff;
-  --gradB:#15d1c1;
-}
+/* … keep everything above unchanged … */
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font-family:'Montserrat',sans-serif;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-
-/* Header */
-.brochure-header{
-  position:sticky; top:0; z-index:50;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:16px 22px;
-  border-bottom:1px solid var(--line);
-  background:rgba(255,255,255,.86);
-  backdrop-filter:saturate(140%) blur(8px);
-}
-.brand-line{display:flex;align-items:center;gap:14px}
-.brand-badge{display:inline-flex;align-items:center;justify-content:center;width:66px;height:66px;background:var(--ink);border-radius:12px}
-.brand-icon{height:48px;width:auto;display:block}
-.brand-word{font-weight:900;letter-spacing:.06em;font-size:2.4rem;line-height:1}
-
-/* HERO */
-.cover{position:relative;min-height:68vh;border-bottom:1px solid var(--line);overflow:hidden}
-.cover-art{position:absolute;inset:0;background:linear-gradient(120deg,var(--gradA),var(--gradB));mask-image:linear-gradient(100deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.75) 55%,rgba(0,0,0,.25) 78%,rgba(0,0,0,0) 100%)}
-.cover-copy{position:relative;max-width:820px;padding:84px 28px;margin-left:clamp(18px,7vw,120px)}
-.cover-copy.invert h1{color:#fff}
-.cover-copy.invert p{color:rgba(255,255,255,.88)}
-.cover-copy h1{margin:0 0 10px 0;font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.08;font-weight:900}
-.cover-copy p{margin:0 0 18px 0;color:var(--muted);font-size:1.05rem}
-
-/* Pillars */
-.pillars-band{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:18px 22px;background:#fff;border-bottom:1px solid var(--line)}
-.pill{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
-.p-title{font-weight:900;font-size:1rem;margin-bottom:4px}
-.p-desc{color:var(--muted);font-size:.95rem;line-height:1.45}
-
-/* How it works */
-.how{padding:56px 22px;border-bottom:1px solid var(--line);background:#fff}
-.how-title{font-weight:900;font-size:1.6rem;margin:0 auto 18px auto;max-width:1100px}
-.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1100px;margin:0 auto}
-.how-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
-.how-num{font-weight:900;color:var(--gradA);margin-bottom:6px}
-.how-card h3{margin:0 0 6px 0}
-.how-card p{margin:0;color:var(--muted)}
-
-/* Pullquote */
-.pullquote{padding:70px 22px;border-bottom:1px solid var(--line);background:var(--paper)}
-.pullquote blockquote{margin:0 auto;max-width:920px;font-size:clamp(1.3rem,2.6vw,2rem);font-weight:800;line-height:1.25}
-
-/* Wins */
-.wins{padding:56px 22px;border-bottom:1px solid var(--line);background:#fff}
-.wins h2{max-width:1100px;margin:0 auto 14px auto;font-weight:900}
-.wins-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.win{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-.win h4{margin:0 0 6px 0;font-weight:900}
-.win p{margin:0;color:var(--muted)}
-
-/* Compare */
-.compare{padding:56px 22px;border-bottom:1px solid var(--line);background:#fff}
-.compare-head{max-width:1100px;margin:0 auto 14px auto;display:flex;align-items:end;justify-content:space-between;gap:14px}
-.compare-head h2{margin:0;font-weight:900}
-.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px}
-.card .p{font-weight:900;margin-bottom:8px}
-.card ul{margin:0;padding-left:18px}
-.card li{color:var(--muted)}
-.table-fold{max-width:1100px;margin:18px auto 0 auto}
-.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;margin-top:10px}
-.matrix{width:100%;border-collapse:separate;border-spacing:0}
-.matrix th,.matrix td{padding:.7rem .85rem;border-bottom:1px solid var(--line);text-align:left}
-.matrix thead th{background:#f3f4f6;font-weight:800;position:sticky;top:0}
-
-/* Footer (centered rows; brand left, button right) */
+/* Footer (centered rows; brand left, center info, button right) */
 .foot{padding:28px 22px;background:#fff;border-top:1px solid var(--line)}
 .foot-inner{max-width:1100px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
 .foot-site{font-weight:900;text-decoration:none;color:var(--ink)}
 .foot-site:hover{text-decoration:underline}
 
-/* middle row: left brand, center info, right button */
+/* Middle row layout */
 .foot-mid{
   width:100%;
   display:grid;
@@ -102,24 +18,26 @@ body{
 .foot-badge{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--ink);border-radius:8px}
 .foot-badge img{height:28px;width:auto;display:block}
 .foot-word{font-weight:900;letter-spacing:.06em}
-.foot-center{justify-self:center}
+
+/* Center column (contact + copyright centered) */
+.foot-center{
+  justify-self:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;     /* <-- centers both lines */
+  gap:4px;
+}
 .foot-contact{color:var(--muted);font-weight:700}
 .foot-contact a{color:var(--ink);text-decoration:none}
 .foot-contact a:hover{text-decoration:underline}
 .foot-copy{color:var(--muted)}
+
+/* Right button */
 .backtotop{justify-self:end;display:inline-flex;align-items:center;gap:6px;padding:.55rem .85rem;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:800;cursor:pointer}
 .backtotop:hover{background:#f5f5f7}
 
 /* Responsive */
-@media (max-width:1200px){
-  .pillars-band{grid-template-columns:repeat(3,1fr)}
-}
 @media (max-width:740px){
-  .cover-copy{margin-left:18px;padding:66px 18px}
-  .how-grid{grid-template-columns:1fr}
-  .wins-grid{grid-template-columns:1fr}
-  .cards{grid-template-columns:1fr}
-  .pillars-band{grid-template-columns:1fr}
   .foot-mid{grid-template-columns:1fr;row-gap:10px}
   .backtotop{justify-self:center}
 }
