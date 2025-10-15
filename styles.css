@@ -153,7 +153,14 @@ img,svg{ max-width:100%; height:auto; }
   .wins-grid{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .pillars-band{grid-template-columns:1fr}
+
+  /* Stack the footer rows on phones */
   .foot-mid{grid-template-columns:1fr;row-gap:10px;min-height:auto}
+
+  /* Center the brand/logo on phones only */
+  .foot-brand{justify-self:center; justify-content:center}
+
+  /* Center the button when stacked */
   .backtotop{justify-self:center}
 
   /* Option A: scale/soften brand on phones */
