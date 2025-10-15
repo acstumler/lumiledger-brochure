@@ -123,13 +123,13 @@
           <li><strong>Vendor memory:</strong> Basic.</li>
           <li><strong>Two-sided GL:</strong> Partial; handled internally.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Cost-conscious firms already on Zoho.</li>
+          <li><strong>Best for:</strong> Firms already on Zoho.</li>
           <li><strong>LumiLedger difference:</strong> Statement-first automation without multi-product subscriptions.</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="p">Sage (Accounting / Sage 50)</div>
+        <div class="p">Sage (Accounting / 50)</div>
         <ul>
           <li><strong>Summary:</strong> Deep traditional accounting with inventory/project depth; accountant-led workflows.</li>
           <li><strong>Automation:</strong> Rules-based; heavier configuration.</li>
@@ -180,25 +180,6 @@
         </ul>
       </div>
     </div>
-
-    <details class="table-fold">
-      <summary>Show raw table</summary>
-      <div class="table-wrap">
-        <table id="matrix" class="matrix">
-          <thead>
-            <tr>
-              <th>Platform</th>
-              <th>Automation Type</th>
-              <th>Learns from Use</th>
-              <th>Automated double entry</th>
-              <th>Reporting & Export</th>
-              <th>Key Takeaways</th>
-            </tr>
-          </thead>
-          <tbody id="matrixBody"></tbody>
-        </table>
-      </div>
-    </details>
   </section>
 
   <footer class="foot">
@@ -220,31 +201,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    (function(){
-      const data = [
-        { platform:"QuickBooks", automation:"Rules", learns:"Limited", doubleEntry:"Partial", export:"CSV / XLSX / PDF", notes:"Full suite; upkeep & reconciliations; best with accountant" },
-        { platform:"Xero", automation:"Rules", learns:"Limited", doubleEntry:"Partial", export:"CSV / XLSX / PDF", notes:"Cloud-first; rule maintenance; advisor collaboration" },
-        { platform:"Zoho Books", automation:"Rules / Workflows", learns:"Basic", doubleEntry:"Partial", export:"CSV / XLSX / PDF", notes:"Best with Zoho Finance suite" },
-        { platform:"Sage (Accounting / 50)", automation:"Rules", learns:"None/Minimal", doubleEntry:"Partial", export:"CSV / XLSX / PDF", notes:"Accountant-led; heavier setup" },
-        { platform:"FreshBooks", automation:"Rules (invoicing-first)", learns:"None", doubleEntry:"No", export:"CSV / XLSX / PDF", notes:"Light GL for freelancers/agencies" },
-        { platform:"Wave", automation:"Rules", learns:"None", doubleEntry:"No", export:"CSV / XLSX / PDF", notes:"Free basics; add-ons for depth" },
-        { platform:"LumiLedger", automation:"Rules + Memory + AI", learns:"Yes", doubleEntry:"Yes", export:"CSV / XLSX / PDF", notes:"Statements & KPIs in minutes; owner-first" }
-      ];
-      const tbody = document.getElementById('matrixBody');
-      if (!tbody) return;
-      tbody.innerHTML = data.map(r => `
-        <tr>
-          <td>${r.platform}</td>
-          <td>${r.automation}</td>
-          <td>${r.learns}</td>
-          <td>${r.doubleEntry}</td>
-          <td>${r.export}</td>
-          <td>${r.notes}</td>
-        </tr>
-      `).join('');
-    })();
-  </script>
 </body>
 </html>
