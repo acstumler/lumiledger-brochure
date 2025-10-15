@@ -4,21 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="format-detection" content="telephone=no,email=no,address=no" />
-
   <title>LumiLedger — Product Brochure</title>
   <meta name="description" content="From raw bank data into clear financial statements and KPIs, instantly." />
   <meta property="og:title" content="LumiLedger — Product Brochure" />
   <meta property="og:description" content="From raw bank data into clear financial statements and KPIs, instantly." />
   <meta property="og:image" content="/assets/og-image.png" />
   <meta name="theme-color" content="#0e0f11" />
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="/assets/LumiLedgerlogo.png" imagesrcset="/assets/LumiLedgerlogo.png 1x" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <!-- HEADER -->
   <header class="brochure-header">
     <div class="brand-line">
       <span class="brand-badge" aria-hidden="true">
@@ -28,7 +25,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section id="overview" class="cover">
     <div class="cover-art" aria-hidden="true"></div>
     <div class="cover-copy invert">
@@ -37,7 +33,6 @@
     </div>
   </section>
 
-  <!-- PILLARS -->
   <section class="pillars-band">
     <div class="pill"><div class="p-title">Dual ingestion</div><div class="p-desc">Connect bank feeds or upload statement PDFs—no single-rail dependency.</div></div>
     <div class="pill"><div class="p-title">Memory + rules + AI</div><div class="p-desc">We remember how you classify vendors, auto-apply rules, and use AI only when something is new or ambiguous.</div></div>
@@ -47,7 +42,6 @@
     <div class="pill"><div class="p-title">Secure by design</div><div class="p-desc">Firebase Auth, Firestore, scoped storage; trusted vendors for data and hosting.</div></div>
   </section>
 
-  <!-- HOW IT WORKS (restored) -->
   <section id="works" class="how">
     <div class="how-title">How it works</div>
     <div class="how-grid">
@@ -58,12 +52,10 @@
     </div>
   </section>
 
-  <!-- PULLQUOTE (restored) -->
   <section class="pullquote">
     <blockquote>“<strong>Fastest path from raw bank data to clear financial statements &amp; KPIs — owner-first</strong>”</blockquote>
   </section>
 
-  <!-- WINS -->
   <section id="wins" class="wins">
     <h2>Where LumiLedger wins</h2>
     <div class="wins-grid">
@@ -74,7 +66,22 @@
     </div>
   </section>
 
-  <!-- COMPARE -->
+  <section id="market" class="wins" style="border-bottom:1px solid var(--line);">
+    <h2>Target market</h2>
+    <div class="wins-grid" style="grid-template-columns:repeat(2,1fr);gap:20px;">
+      <div class="win">
+        <h4>Who we serve</h4>
+        <p>U.S. small businesses with roughly <strong>1–25 employees</strong> that need clean financials and KPIs without the complexity of full accounting suites.</p>
+        <p>Typically <strong>owner- or ops-led</strong>, managing books after hours with limited bookkeeping support.</p>
+      </div>
+      <div class="win">
+        <h4>Why it matters</h4>
+        <p><strong>~6.3M employer small businesses</strong> represent 99.9% of U.S. companies. The median firm holds <strong>&lt;15 days of cash buffer</strong>, making fast, accurate statements critical.</p>
+        <p><strong>~71% carry debt</strong> and many report cash-flow strain — real-time visibility and lender-ready exports reduce friction.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="compare" class="compare">
     <div class="compare-head">
       <h2>Compare to the market</h2>
@@ -84,78 +91,78 @@
       <div class="card">
         <div class="p">QuickBooks</div>
         <ul>
-          <li><strong>Summary:</strong> Full accounting suite serving SMBs to mid-market, with a vast ecosystem of add-ons and accountant collaboration tools.</li>
-          <li><strong>Automation:</strong> Bank rules, recurring transactions, and memorized payees—manual reconciliations often required.</li>
-          <li><strong>Vendor memory:</strong> Limited to memorized rules; no adaptive learning.</li>
-          <li><strong>Two-sided GL:</strong> Partial; underlying double-entry, but abstracted from owner users.</li>
+          <li><strong>Summary:</strong> Full accounting suite serving SMBs to mid-market, with a vast add-on ecosystem and accountant collaboration.</li>
+          <li><strong>Automation:</strong> Bank rules and recurring transactions; manual reconciliations often required.</li>
+          <li><strong>Vendor memory:</strong> Limited; no adaptive learning.</li>
+          <li><strong>Two-sided GL:</strong> Partial; double-entry abstracted from owners.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Businesses with dedicated accounting teams or outsourced bookkeeping.</li>
-          <li><strong>LumiLedger difference:</strong> Memory + AI assist to reach balanced books in minutes—minimal rule maintenance.</li>
+          <li><strong>Best for:</strong> Teams with ongoing bookkeeping/accountant support.</li>
+          <li><strong>LumiLedger difference:</strong> Memory + AI assist to reach balanced books in minutes with minimal rule maintenance.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="p">Xero</div>
         <ul>
-          <li><strong>Summary:</strong> Cloud-native suite with global reach and strong collaboration between owner, accountant, and advisor.</li>
-          <li><strong>Automation:</strong> Rule-based reconciliations and recurring transactions.</li>
-          <li><strong>Vendor memory:</strong> Basic pattern recognition only; user-driven rules.</li>
-          <li><strong>Two-sided GL:</strong> Partial; visible mainly to accountants.</li>
+          <li><strong>Summary:</strong> Cloud-native suite with strong owner–advisor collaboration.</li>
+          <li><strong>Automation:</strong> Rule-based reconciliations and repeating transactions.</li>
+          <li><strong>Vendor memory:</strong> Basic patterns; user-driven rules.</li>
+          <li><strong>Two-sided GL:</strong> Partial; surfaced mainly to accountants.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
           <li><strong>Best for:</strong> Multi-user teams with recurring accounting oversight.</li>
-          <li><strong>LumiLedger difference:</strong> Real-time vendor memory + AI assist; far less setup and maintenance.</li>
+          <li><strong>LumiLedger difference:</strong> Real-time vendor memory + AI assist; less setup and upkeep.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="p">Zoho Books</div>
         <ul>
-          <li><strong>Summary:</strong> Strong standalone accounting app that excels when part of the broader Zoho Finance Suite.</li>
-          <li><strong>Automation:</strong> Rules, approvals, and custom workflows.</li>
-          <li><strong>Vendor memory:</strong> Basic; no adaptive intelligence.</li>
-          <li><strong>Two-sided GL:</strong> Partial, handled internally.</li>
+          <li><strong>Summary:</strong> Capable accounting core that shines with Zoho Finance Suite.</li>
+          <li><strong>Automation:</strong> Rules, approvals, workflows.</li>
+          <li><strong>Vendor memory:</strong> Basic.</li>
+          <li><strong>Two-sided GL:</strong> Partial; handled internally.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Cost-conscious businesses already using Zoho tools.</li>
-          <li><strong>LumiLedger difference:</strong> Statement-first automation without needing multiple product subscriptions.</li>
+          <li><strong>Best for:</strong> Cost-conscious firms already on Zoho.</li>
+          <li><strong>LumiLedger difference:</strong> Statement-first automation without multi-product subscriptions.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="p">Sage (Accounting / Sage 50)</div>
         <ul>
-          <li><strong>Summary:</strong> Deep traditional accounting with inventory and job costing; geared for accountants and back-office professionals.</li>
-          <li><strong>Automation:</strong> Rules-based; configuration-heavy for new users.</li>
+          <li><strong>Summary:</strong> Deep traditional accounting with inventory/project depth; accountant-led workflows.</li>
+          <li><strong>Automation:</strong> Rules-based; heavier configuration.</li>
           <li><strong>Vendor memory:</strong> None/minimal.</li>
-          <li><strong>Two-sided GL:</strong> Partial; surfaced through accountant-level tools.</li>
+          <li><strong>Two-sided GL:</strong> Partial; surfaced via accountant tools.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Firms requiring robust back-office control or industry-specific features.</li>
-          <li><strong>LumiLedger difference:</strong> Simplifies complex workflows for owners while keeping two-sided integrity and instant exports.</li>
+          <li><strong>Best for:</strong> Firms needing robust back-office control.</li>
+          <li><strong>LumiLedger difference:</strong> Owner-speed outcomes with two-sided integrity and instant exports.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="p">FreshBooks</div>
         <ul>
-          <li><strong>Summary:</strong> Invoicing-first design with basic bookkeeping; tailored for freelancers and service firms.</li>
+          <li><strong>Summary:</strong> Invoicing-first app with light bookkeeping; built for freelancers and agencies.</li>
           <li><strong>Automation:</strong> Recurring invoices and simple expense rules.</li>
           <li><strong>Vendor memory:</strong> None.</li>
-          <li><strong>Two-sided GL:</strong> No direct owner access.</li>
+          <li><strong>Two-sided GL:</strong> No owner-visible ledger.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Freelancers or small service providers focused on billing simplicity.</li>
-          <li><strong>LumiLedger difference:</strong> Automates full financial statements beyond invoicing—true GL balance in seconds.</li>
+          <li><strong>Best for:</strong> Billing-centric service businesses.</li>
+          <li><strong>LumiLedger difference:</strong> Automates full statements beyond invoicing—true GL balance in seconds.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="p">Wave</div>
         <ul>
-          <li><strong>Summary:</strong> Free entry-level bookkeeping with add-on payments and payroll; ideal for early startups.</li>
+          <li><strong>Summary:</strong> Free basics with paid add-ons for payments/payroll; good for very early stage.</li>
           <li><strong>Automation:</strong> Basic categorization and rules; manual reconciliation common.</li>
           <li><strong>Vendor memory:</strong> None.</li>
-          <li><strong>Two-sided GL:</strong> No visible ledger detail for users.</li>
+          <li><strong>Two-sided GL:</strong> No owner-visible detail.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Solo founders seeking basic expense tracking without cost.</li>
-          <li><strong>LumiLedger difference:</strong> From free-tier simplicity to full statement automation and vendor memory without complexity.</li>
+          <li><strong>Best for:</strong> Solo founders tracking expenses at $0.</li>
+          <li><strong>LumiLedger difference:</strong> From statement PDFs to balanced GL and KPIs with vendor memory—no suite learning curve.</li>
         </ul>
       </div>
 
@@ -163,17 +170,16 @@
         <div class="p">LumiLedger</div>
         <ul>
           <li><strong>Summary:</strong> Owner-first pipeline from raw data or PDFs → classification memory + assist → balanced two-sided entries → live statements & KPIs.</li>
-          <li><strong>Automation:</strong> Rules + vendor memory + AI fallback; real-time data ingestion.</li>
+          <li><strong>Automation:</strong> Rules + vendor memory + AI fallback; real-time ingestion.</li>
           <li><strong>Vendor memory:</strong> Yes; learns and reuses classifications.</li>
           <li><strong>Two-sided GL:</strong> Yes; transparent journaled entries and running balances.</li>
           <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
-          <li><strong>Best for:</strong> Owners who want clean, lender-ready books without mastering a complex suite.</li>
+          <li><strong>Best for:</strong> Owners who want clean, lender-ready books without a complex suite.</li>
           <li><strong>Edge controls:</strong> Manual override, bulk reclass, and clean outputs for accountants or lenders.</li>
         </ul>
       </div>
     </div>
 
-    <!-- Raw table (kept) -->
     <details class="table-fold">
       <summary>Show raw table</summary>
       <div class="table-wrap">
@@ -194,7 +200,6 @@
     </details>
   </section>
 
-  <!-- FOOTER -->
   <footer class="foot">
     <div class="foot-inner">
       <a class="foot-site" href="https://LumiLedger.com" target="_blank" rel="noopener">LumiLedger.com</a>
