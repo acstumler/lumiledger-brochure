@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Mobile stability: include safe areas + disable phone/email auto-detect -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+
   <title>LumiLedger — Product Brochure</title>
   <meta name="description" content="From raw bank data into clear financial statements and KPIs, instantly." />
   <meta property="og:title" content="LumiLedger — Product Brochure" />
   <meta property="og:description" content="From raw bank data into clear financial statements and KPIs, instantly." />
   <meta property="og:image" content="/assets/og-image.png" />
   <meta name="theme-color" content="#0e0f11" />
+
+  <!-- Perf: keep fonts predictable on mobile -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Prevent icon pop-in shifting the header/footer -->
+  <link rel="preload" as="image" href="/assets/LumiLedgerlogo.png" imagesrcset="/assets/LumiLedgerlogo.png 1x" />
+
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
