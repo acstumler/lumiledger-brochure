@@ -95,8 +95,14 @@ img,svg{ max-width:100%; height:auto; }
 .matrix thead th{background:#f3f4f6;font-weight:800;position:sticky;top:0}
 
 /* Footer (brand left, true-centered stack, back-to-top right; safe-area padding) */
-.foot{padding:28px 22px calc(28px + var(--safe-bottom)) 22px;background:#fff;border-top:1px solid var(--line)}
-.foot-inner{max-width:1100px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+.foot{
+  padding:28px 22px calc(28px + var(--safe-bottom)) 22px;
+  background:#fff; border-top:1px solid var(--line);
+}
+.foot-inner{
+  max-width:1100px; margin:0 auto; text-align:center;
+  display:flex; flex-direction:column; gap:14px; align-items:center;
+}
 .foot-site{font-weight:900;text-decoration:none;color:var(--ink)}
 .foot-site:hover{text-decoration:underline}
 
@@ -117,18 +123,13 @@ img,svg{ max-width:100%; height:auto; }
 /* Center stack */
 .foot-center{
   justify-self:center;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  gap:4px;
-  line-height:1.25;
-  max-width: 100%;
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  gap:4px; line-height:1.25; max-width: 100%;
 }
 /* Long emails wrap instead of pushing layout on tiny screens */
+.foot-contact{color:var(--muted);font-weight:700}
 .foot-contact a{color:var(--ink);text-decoration:none;word-break: break-word}
 .foot-contact a:hover{text-decoration:underline}
-.foot-contact{color:var(--muted);font-weight:700}
 .foot-copy{color:var(--muted)}
 
 /* Right button: ensure 44px+ tap target */
@@ -154,4 +155,13 @@ img,svg{ max-width:100%; height:auto; }
   .pillars-band{grid-template-columns:1fr}
   .foot-mid{grid-template-columns:1fr;row-gap:10px;min-height:auto}
   .backtotop{justify-self:center}
+
+  /* Option A: scale/soften brand on phones */
+  .foot-badge{
+    width:28px; height:28px; border-radius:6px;
+    background:rgba(14,15,17,.9);
+  }
+  .foot-badge img{ height:18px; }
+  .foot-brand{ gap:8px; }
+  .foot-word{ font-size:1.1rem; letter-spacing:.06em; }
 }
