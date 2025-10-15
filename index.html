@@ -16,6 +16,18 @@
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <script>
+    (function () {
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      const toTop = () => window.scrollTo(0, 0);
+      // Run immediately, then again as the page finishes initializing
+      toTop();
+      document.addEventListener("DOMContentLoaded", toTop, { once: true });
+      window.addEventListener("load", toTop, { once: true });
+      window.addEventListener("pageshow", e => { if (e.persisted) toTop(); });
+    })();
+  </script>
+
   <header class="brochure-header">
     <div class="brand-line">
       <span class="brand-badge" aria-hidden="true">
