@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#0e0f11" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="/assets/LumiLedgerlogo.png" />
+  <link rel="preload" as="image" href="/assets/LumiLedgerlogo.png" imagesrcset="/assets/LumiLedgerlogo.png 1x" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -20,6 +20,7 @@
     (function () {
       if ("scrollRestoration" in history) history.scrollRestoration = "manual";
       const toTop = () => window.scrollTo(0, 0);
+      // Run immediately, then again as the page finishes initializing
       toTop();
       document.addEventListener("DOMContentLoaded", toTop, { once: true });
       window.addEventListener("load", toTop, { once: true });
@@ -32,12 +33,12 @@
       <span class="brand-badge" aria-hidden="true">
         <img class="brand-icon" src="/assets/LumiLedgerlogo.png" alt="" />
       </span>
-      <div class="brand-word">LUMILEDGER</div>
+      <div class="brand-word" aria-label="LumiLedger">LUMILEDGER</div>
     </div>
   </header>
 
-  <section id="overview" class="cover home-cover">
-    <div class="cover-art"></div>
+  <section id="overview" class="cover">
+    <div class="cover-art" aria-hidden="true"></div>
     <div class="cover-copy invert">
       <h1>From raw bank data into clear financial statements and KPIs, instantly.</h1>
       <p>Connect accounts via Plaid or upload statement PDFs, see a clean transactions view, and apply memory + rules with an AI backup to produce balanced financial statements and KPIs—without the mess.</p>
@@ -46,7 +47,7 @@
 
   <section class="pillars-band">
     <div class="pill"><div class="p-title">Dual ingestion</div><div class="p-desc">Connect bank feeds or upload statement PDFs—no single-rail dependency.</div></div>
-    <div class="pill"><div class="p-title">Memory + rules + AI</div><div class="p-desc">We remember how you classify vendors, auto-apply rules, and use AI only when something’s new or ambiguous.</div></div>
+    <div class="pill"><div class="p-title">Memory + rules + AI</div><div class="p-desc">We remember how you classify vendors, auto-apply rules, and use AI only when something is new or ambiguous.</div></div>
     <div class="pill"><div class="p-title">Balanced auto entries</div><div class="p-desc">Detects offset accounts and posts both sides for a clean ledger every time.</div></div>
     <div class="pill"><div class="p-title">Real-time outputs</div><div class="p-desc">P&L, Balance Sheet, Cash Flow, and KPIs update as activity arrives; export CSV/XLSX/PDF on demand.</div></div>
     <div class="pill"><div class="p-title">Owner control</div><div class="p-desc">Overrule any line or bulk reclass whole sets in seconds—accountant-friendly when needed.</div></div>
@@ -64,15 +65,15 @@
   </section>
 
   <section class="pullquote">
-    <blockquote>“<strong>Fastest path from raw bank data to clear financial statements & KPIs — owner-first</strong>”</blockquote>
+    <blockquote>“<strong>Fastest path from raw bank data to clear financial statements &amp; KPIs — owner-first</strong>”</blockquote>
   </section>
 
   <section id="wins" class="wins">
     <h2>Where LumiLedger wins</h2>
     <div class="wins-grid">
-      <div class="win"><h4>Minutes to clean books</h4><p>Bank link or PDF → classify → balanced entries → real-time statements & KPIs.</p></div>
+      <div class="win"><h4>Minutes to clean books</h4><p>Bank link or PDF → classify → balanced entries → real-time statements &amp; KPIs.</p></div>
       <div class="win"><h4>Memory over rules (+ AI)</h4><p>Rules handle the common case; AI is a backup. Fix outliers instantly with manual overrule or bulk reclass.</p></div>
-      <div class="win"><h4>Statement-first design</h4><p>Built around the GL so P&L, Balance Sheet, and Cash Flow flow naturally.</p></div>
+      <div class="win"><h4>Statement-first design</h4><p>Built around the GL so P&amp;L, Balance Sheet, and Cash Flow flow naturally.</p></div>
       <div class="win"><h4>Instant exports</h4><p>CSV/XLSX/PDF report exports whenever an advisor needs more depth.</p></div>
     </div>
   </section>
@@ -100,8 +101,96 @@
     </div>
 
     <div class="cards">
-      <!-- Your 7 product comparison cards unchanged -->
-      <!-- (content trimmed for brevity) -->
+      <div class="card">
+        <div class="p">QuickBooks</div>
+        <ul>
+          <li><strong>Summary:</strong> Full accounting suite serving SMBs to mid-market, with a vast add-on ecosystem and accountant collaboration.</li>
+          <li><strong>Automation:</strong> Bank rules and recurring transactions; manual reconciliations often required.</li>
+          <li><strong>Vendor memory:</strong> Limited; no adaptive learning.</li>
+          <li><strong>Two-sided GL:</strong> Partial; double-entry abstracted from owners.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Teams with ongoing bookkeeping/accountant support.</li>
+          <li><strong>LumiLedger difference:</strong> Memory + AI assist to reach balanced books in minutes with minimal rule maintenance.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="p">Xero</div>
+        <ul>
+          <li><strong>Summary:</strong> Cloud-native suite with strong owner–advisor collaboration.</li>
+          <li><strong>Automation:</strong> Rule-based reconciliations and repeating transactions.</li>
+          <li><strong>Vendor memory:</strong> Basic patterns; user-driven rules.</li>
+          <li><strong>Two-sided GL:</strong> Partial; surfaced mainly to accountants.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Multi-user teams with recurring accounting oversight.</li>
+          <li><strong>LumiLedger difference:</strong> Real-time vendor memory + AI assist; less setup and upkeep.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="p">Zoho Books</div>
+        <ul>
+          <li><strong>Summary:</strong> Capable accounting core that shines with Zoho Finance Suite.</li>
+          <li><strong>Automation:</strong> Rules, approvals, workflows.</li>
+          <li><strong>Vendor memory:</strong> Basic.</li>
+          <li><strong>Two-sided GL:</strong> Partial; handled internally.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Firms already on Zoho.</li>
+          <li><strong>LumiLedger difference:</strong> Statement-first automation without multi-product subscriptions.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="p">Sage (Accounting / 50)</div>
+        <ul>
+          <li><strong>Summary:</strong> Deep traditional accounting with inventory/project depth; accountant-led workflows.</li>
+          <li><strong>Automation:</strong> Rules-based; heavier configuration.</li>
+          <li><strong>Vendor memory:</strong> None/minimal.</li>
+          <li><strong>Two-sided GL:</strong> Partial; surfaced via accountant tools.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Firms needing robust back-office control.</li>
+          <li><strong>LumiLedger difference:</strong> Owner-speed outcomes with two-sided integrity and instant exports.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="p">FreshBooks</div>
+        <ul>
+          <li><strong>Summary:</strong> Invoicing-first app with light bookkeeping; built for freelancers and agencies.</li>
+          <li><strong>Automation:</strong> Recurring invoices and simple expense rules.</li>
+          <li><strong>Vendor memory:</strong> None.</li>
+          <li><strong>Two-sided GL:</strong> No owner-visible ledger.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Billing-centric service businesses.</li>
+          <li><strong>LumiLedger difference:</strong> Automates full statements beyond invoicing—true GL balance in seconds.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="p">Wave</div>
+        <ul>
+          <li><strong>Summary:</strong> Free basics with paid add-ons for payments/payroll; good for very early stage.</li>
+          <li><strong>Automation:</strong> Basic categorization and rules; manual reconciliation common.</li>
+          <li><strong>Vendor memory:</strong> None.</li>
+          <li><strong>Two-sided GL:</strong> No owner-visible detail.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Solo founders tracking expenses at $0.</li>
+          <li><strong>LumiLedger difference:</strong> From statement PDFs to balanced GL and KPIs with vendor memory—no suite learning curve.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="p">LumiLedger</div>
+        <ul>
+          <li><strong>Summary:</strong> Owner-first pipeline from raw data or PDFs → classification memory + assist → balanced two-sided entries → live statements & KPIs.</li>
+          <li><strong>Automation:</strong> Rules + vendor memory + AI fallback; real-time ingestion.</li>
+          <li><strong>Vendor memory:</strong> Yes; learns and reuses classifications.</li>
+          <li><strong>Two-sided GL:</strong> Yes; transparent journaled entries and running balances.</li>
+          <li><strong>Exports:</strong> CSV / XLSX / PDF.</li>
+          <li><strong>Best for:</strong> Owners who want clean, lender-ready books without a complex suite.</li>
+          <li><strong>Edge controls:</strong> Manual override, bulk reclass, and clean outputs for accountants or lenders.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -117,7 +206,10 @@
           <div class="foot-contact">Contact: <a href="mailto:alanson.stumler@lumiledger.com">alanson.stumler@lumiledger.com</a></div>
           <div class="foot-copy">© 2025 LumiLedger</div>
         </div>
-        <button class="backtotop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</button>
+        <button class="backtotop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+          Back to top
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 10.8V19h-2v-8.2L6.4 13.4 5 12z" fill="currentColor"/></svg>
+        </button>
       </div>
     </div>
   </footer>
