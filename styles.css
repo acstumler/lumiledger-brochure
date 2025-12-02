@@ -43,6 +43,8 @@ img,svg{max-width:100%;height:auto}
 .brand-icon{height:48px;width:auto;display:block}
 .brand-word{font-weight:900;letter-spacing:.06em;font-size:2.4rem;line-height:1}
 
+/* HERO / COVER */
+
 .cover{
   position:relative;
   border-bottom:1px solid var(--line);
@@ -90,6 +92,8 @@ img,svg{max-width:100%;height:auto}
   font-size:1.08rem;
   margin-bottom:24px;
 }
+
+/* MAIN BROCHURE SECTIONS */
 
 .pillars-band{
   display:grid;
@@ -191,6 +195,8 @@ img,svg{max-width:100%;height:auto}
 .matrix th,.matrix td{padding:.7rem .85rem;border-bottom:1px solid var(--line);text-align:left}
 .matrix thead th{background:#f3f4f6;font-weight:800;position:sticky;top:0}
 
+/* FOOTER */
+
 .foot{
   padding:28px 22px calc(28px + var(--safe-bottom)) 22px;
   background:#fff;
@@ -261,6 +267,8 @@ img,svg{max-width:100%;height:auto}
 }
 .backtotop:hover{background:#f5f5f7}
 
+/* DEMO CTA ON MAIN PAGE */
+
 .demo-cta{
   padding:56px 22px;
   border-bottom:1px solid var(--line);
@@ -296,6 +304,9 @@ img,svg{max-width:100%;height:auto}
   align-items:flex-start;
   gap:10px;
 }
+
+/* BASE DEMO BUTTON (used on white backgrounds) */
+
 .demo-button{
   display:inline-flex;
   align-items:center;
@@ -310,7 +321,24 @@ img,svg{max-width:100%;height:auto}
   cursor:pointer;
   -webkit-tap-highlight-color:transparent;
 }
-.demo-button:hover{opacity:.92}
+.demo-button:hover{
+  opacity:.92;
+}
+
+/* DEMO HERO BUTTON OVERRIDE – WHITE PILL ON GRADIENT */
+
+.demo-cover .demo-button{
+  background:#ffffff;
+  color:var(--ink);
+  border:1px solid rgba(255,255,255,.4);
+  box-shadow:0 10px 26px rgba(15,19,30,.22);
+}
+.demo-cover .demo-button:hover{
+  background:#f3f3f6;
+  box-shadow:0 8px 20px rgba(15,19,30,.18);
+}
+
+/* DEMO DETAIL SECTIONS */
 
 .demo-detail,
 .demo-contact{
@@ -341,6 +369,8 @@ img,svg{max-width:100%;height:auto}
   font-size:.95rem;
   line-height:1.5;
 }
+
+/* RESPONSIVE */
 
 @media (max-width:1200px){
   .pillars-band{grid-template-columns:repeat(3,1fr)}
