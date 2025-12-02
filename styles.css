@@ -169,7 +169,7 @@ img,svg{ max-width:100%; height:auto; }
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:.8rem 1.4rem;
+  padding:.9rem 1.6rem;
   border-radius:999px;
   border:none;
   background:linear-gradient(135deg,var(--gradA),var(--gradB));
@@ -180,45 +180,57 @@ img,svg{ max-width:100%; height:auto; }
   -webkit-tap-highlight-color:transparent;
 }
 .demo-button:hover{
-  opacity:.92;
-}
-.demo-note{
-  font-size:.9rem;
-  color:var(--muted);
-}
-.demo-note a{
-  color:var(--ink);
-  text-decoration:none;
-}
-.demo-note a:hover{
-  text-decoration:underline;
+  opacity:.94;
 }
 
-/* Demo page layout tweaks */
+/* Visual redesign: demo page hero and sections */
 
 .demo-cover{
-  min-height:60vh;
+  min-height:72vh;
+}
+.demo-cover .cover-art{
+  mask-image:linear-gradient(120deg,rgba(0,0,0,.98) 0%,rgba(0,0,0,.82) 55%,rgba(0,0,0,.25) 82%,rgba(0,0,0,0) 100%);
 }
 .demo-cover-copy{
-  max-width:720px;
+  max-width:640px;
+  padding:110px 32px 96px 32px;
 }
-.demo-cover-copy .demo-button{
-  margin-top:10px;
+.demo-cover-copy h1{
+  font-size:clamp(2.6rem,4.4vw,3.4rem);
 }
-.demo-subnote{
-  margin:10px 0 0 0;
-  color:rgba(255,255,255,.88);
-  font-size:.95rem;
+.demo-cover-copy p{
+  font-size:1.08rem;
+  margin-bottom:24px;
 }
 
+/* Demo detail sections */
+
+.demo-detail,
+.demo-contact{
+  background:var(--paper);
+}
+.demo-detail h2,
+.demo-contact h2{
+  max-width:1100px;
+  margin:0 auto 18px auto;
+}
 .demo-detail .wins-grid,
 .demo-contact .wins-grid{
   grid-template-columns:repeat(2,1fr);
-  gap:20px;
+  gap:22px;
+}
+.demo-detail .win,
+.demo-contact .win{
+  border-radius:20px;
+  border:1px solid var(--line);
+  background:#fff;
+  box-shadow:0 18px 40px rgba(15,19,30,.06);
 }
 
+/* Demo contact list */
+
 .demo-list{
-  margin:8px 0 0 0;
+  margin:10px 0 0 0;
   padding-left:18px;
   color:var(--muted);
   font-size:.95rem;
@@ -228,7 +240,6 @@ img,svg{ max-width:100%; height:auto; }
 @media (max-width:1200px){
   .pillars-band{grid-template-columns:repeat(3,1fr)}
 }
-
 @media (max-width:740px){
   .cover-copy{margin-left:18px;padding:66px 18px}
   .how-grid{grid-template-columns:1fr}
@@ -252,6 +263,10 @@ img,svg{ max-width:100%; height:auto; }
   }
   .demo-actions{
     justify-self:start;
+  }
+
+  .demo-cover-copy{
+    padding:90px 20px 70px 20px;
   }
   .demo-detail .wins-grid,
   .demo-contact .wins-grid{
