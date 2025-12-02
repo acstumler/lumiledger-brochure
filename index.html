@@ -19,7 +19,7 @@
   <script>
     (function () {
       if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-      const toTop = () => window.scrollTo(0, 0);
+      var toTop = function () { window.scrollTo(0, 0); };
       toTop();
       document.addEventListener("DOMContentLoaded", toTop, { once: true });
       window.addEventListener("load", toTop, { once: true });
@@ -36,7 +36,7 @@
     </div>
   </header>
 
-  <section id="overview" class="cover">
+  <section id="overview" class="cover home-cover">
     <div class="cover-art" aria-hidden="true"></div>
     <div class="cover-copy invert">
       <h1>From raw bank data into clear financial statements and KPIs, instantly.</h1>
@@ -197,11 +197,11 @@
     <div class="demo-inner">
       <div class="demo-copy">
         <h2>Ready to see LumiLedger in action?</h2>
-        <p>Walk through how LumiLedger takes raw bank feeds and PDFs and turns them into balanced financial statements and KPIs in minutes.</p>
+        <p>Walk through how LumiLedger takes raw bank feeds and turns them into balanced financial statements, a two-sided General Ledger, and live Performance Indicators.</p>
         <ul class="demo-points">
           <li>Live walkthrough on real or sample data</li>
-          <li>Overview of Link + Load, Transactions, statements, and KPIs</li>
-          <li>Time for Q&amp;A specific to your business or firm</li>
+          <li>Overview of Link + Load, Transactions, statements, and Performance Indicators</li>
+          <li>Time for questions specific to your business or firm</li>
         </ul>
       </div>
       <div class="demo-actions">
@@ -224,7 +224,7 @@
         </div>
         <button class="backtotop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
           Back to top
-          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 10.8V19h-2v-8.2L6.4 13.4 5 12z" fill="currentColor"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 10.8V19h-2v-8.2L6.4 13.4 5 12z" fill="currentColor"></path></svg>
         </button>
       </div>
     </div>
