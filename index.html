@@ -20,7 +20,6 @@
     (function () {
       if ("scrollRestoration" in history) history.scrollRestoration = "manual";
       const toTop = () => window.scrollTo(0, 0);
-      // Run immediately, then again as the page finishes initializing
       toTop();
       document.addEventListener("DOMContentLoaded", toTop, { once: true });
       window.addEventListener("load", toTop, { once: true });
@@ -182,7 +181,8 @@
       <div class="card">
         <div class="p">LumiLedger</div>
         <ul>
-          <li><strong>Summary:</strong> Owner-first pipeline from raw data or PDFs → classification memory + assist → balanced two-sided entries → live statements & KPIs.</li>
+          <li><strong>Summary:</strong> Owner-first pipeline from raw data or PDFs →
+            classification memory + assist → balanced two-sided entries → live statements & KPIs.</li>
           <li><strong>Automation:</strong> Rules + vendor memory + AI fallback; real-time ingestion.</li>
           <li><strong>Vendor memory:</strong> Yes; learns and reuses classifications.</li>
           <li><strong>Two-sided GL:</strong> Yes; transparent journaled entries and running balances.</li>
@@ -190,6 +190,20 @@
           <li><strong>Best for:</strong> Owners who want clean, lender-ready books without a complex suite.</li>
           <li><strong>Edge controls:</strong> Manual override, bulk reclass, and clean outputs for accountants or lenders.</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="demo-cta">
+    <div class="demo-inner">
+      <div class="demo-copy">
+        <h2>Interested in a live demo?</h2>
+        <p>Walk through how LumiLedger turns raw bank data into clear financial statements and KPIs for your business.</p>
+      </div>
+      <div class="demo-actions">
+        <a class="demo-button" href="mailto:alanson.stumler@lumiledger.com?subject=LumiLedger%20demo%20request">
+          Book a demo
+        </a>
       </div>
     </div>
   </section>
