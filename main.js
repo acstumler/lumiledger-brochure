@@ -1,6 +1,34 @@
 (function(){
   var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
 
+  var hasSwoosh=document.querySelector('.problem, .gap, .growth');
+  var reduceMotion=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(hasSwoosh && !reduceMotion){
+    var root=document.documentElement;
+    var lastScroll=window.scrollY||0;
+    var ticking=false;
+
+    function updateSwoosh(){
+      var offset=Math.round(lastScroll * -0.03);
+      root.style.setProperty('--swoosh-shift', offset + 'px');
+    }
+
+    function onScroll(){
+      lastScroll=window.scrollY||0;
+      if(!ticking){
+        window.requestAnimationFrame(function(){
+          updateSwoosh();
+          ticking=false;
+        });
+        ticking=true;
+      }
+    }
+
+    updateSwoosh();
+    window.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('resize', onScroll);
+  }
+
   function toCells(line){
     var out=[], cur='', q=false;
     for(var i=0;i<line.length;i++){
