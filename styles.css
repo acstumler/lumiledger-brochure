@@ -509,8 +509,16 @@ img,svg{ max-width:100%; height:auto; }
   .problem-card,
   .gap-card,
   .growth-card{
-    background:rgba(255,255,255,.88);
+    background:rgba(255,255,255,.8);
     border-color:rgba(231,232,236,.6);
+  }
+
+  .problem::before,
+  .gap::before,
+  .growth::before{
+    opacity:1;
+    filter:brightness(.92) contrast(1.12);
+    background-position:center 30%;
   }
 }
 @media (max-width:560px){
@@ -533,7 +541,8 @@ img,svg{ max-width:100%; height:auto; }
   .problem::before,
   .gap::before,
   .growth::before{
-    background-position:center 38%;
-    opacity:.8;
+    background-position:center 22%;
+    opacity:1;
+    filter:brightness(.9) contrast(1.15);
   }
 }
