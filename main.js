@@ -1,14 +1,12 @@
 (function(){
   var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
 
-  var swooshScroll=document.querySelector('.swoosh-scroll');
   var hasSwoosh=document.querySelector('.problem, .gap, .growth');
   var reduceMotion=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(hasSwoosh && !reduceMotion){
     var root=document.documentElement;
-    var lastScroll=0;
+    var lastScroll=window.scrollY||0;
     var ticking=false;
-    var scrollTarget=swooshScroll||window;
 
     function updateSwoosh(){
       var offset=Math.round(lastScroll * -0.03);
@@ -16,7 +14,7 @@
     }
 
     function onScroll(){
-      lastScroll=swooshScroll ? swooshScroll.scrollTop : (window.scrollY||0);
+      lastScroll=window.scrollY||0;
       if(!ticking){
         window.requestAnimationFrame(function(){
           updateSwoosh();
@@ -27,7 +25,7 @@
     }
 
     updateSwoosh();
-    scrollTarget.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('scroll', onScroll, { passive:true });
     window.addEventListener('resize', onScroll);
   }
 
