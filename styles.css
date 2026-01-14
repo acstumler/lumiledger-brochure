@@ -76,7 +76,9 @@ img,svg{ max-width:100%; height:auto; }
   background-image:var(--swoosh-lines);
   background-repeat:no-repeat;
   background-size:100% auto;
-  background-position:center calc(50% + var(--swoosh-shift, 0px));
+  background-position:center 45%;
+  transform:translateY(var(--swoosh-shift, 0px));
+  will-change:transform;
   opacity:.9;
   pointer-events:none;
 }
@@ -145,7 +147,9 @@ img,svg{ max-width:100%; height:auto; }
   background-image:var(--swoosh-lines);
   background-repeat:no-repeat;
   background-size:100% auto;
-  background-position:center calc(50% + var(--swoosh-shift, 0px));
+  background-position:center 45%;
+  transform:translateY(var(--swoosh-shift, 0px));
+  will-change:transform;
   opacity:.9;
   pointer-events:none;
 }
@@ -228,7 +232,9 @@ img,svg{ max-width:100%; height:auto; }
   background-image:var(--swoosh-lines);
   background-repeat:no-repeat;
   background-size:100% auto;
-  background-position:center calc(50% + var(--swoosh-shift, 0px));
+  background-position:center 45%;
+  transform:translateY(var(--swoosh-shift, 0px));
+  will-change:transform;
   opacity:.9;
   pointer-events:none;
 }
