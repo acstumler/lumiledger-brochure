@@ -4,6 +4,7 @@
   --muted:#6a6d75;
   --card:#ffffff;
   --line:#e7e8ec;
+  --line-bg: repeating-linear-gradient(180deg, rgba(14,15,17,.06) 0 1px, transparent 1px 48px);
   --gradA:#7d4dff;
   --gradB:#15d1c1;
   --safe-top: env(safe-area-inset-top, 0px);
@@ -55,7 +56,8 @@ img,svg{ max-width:100%; height:auto; }
 .problem{
   padding:64px 22px;
   border-bottom:1px solid var(--line);
-  background:#fff;
+  background-color:#fff;
+  background-image:var(--line-bg);
 }
 .problem-inner{max-width:1100px;margin:0 auto}
 .problem-head{max-width:820px;margin-bottom:28px}
@@ -111,7 +113,8 @@ img,svg{ max-width:100%; height:auto; }
   padding:64px 22px;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  background:#fff;
+  background-color:#fff;
+  background-image:var(--line-bg);
 }
 .gap-inner{max-width:1100px;margin:0 auto}
 .gap-head{max-width:820px;margin-bottom:28px}
@@ -181,7 +184,8 @@ img,svg{ max-width:100%; height:auto; }
 .growth{
   padding:64px 22px;
   border-bottom:1px solid var(--line);
-  background:#fff;
+  background-color:#fff;
+  background-image:var(--line-bg);
 }
 .growth-inner{max-width:1100px;margin:0 auto}
 .growth-head{max-width:820px;margin-bottom:28px}
@@ -283,7 +287,9 @@ img,svg{ max-width:100%; height:auto; }
 
 .foot{
   padding:28px 22px calc(28px + var(--safe-bottom)) 22px;
-  background:#fff; border-top:1px solid var(--line);
+  background-color:#fff;
+  background-image:var(--line-bg);
+  border-top:1px solid var(--line);
 }
 .foot-inner{
   max-width:1100px; margin:0 auto; text-align:center;
