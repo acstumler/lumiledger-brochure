@@ -357,7 +357,6 @@ img,svg{ max-width:100%; height:auto; }
 .foot{
   padding:28px var(--page-pad) calc(28px + var(--safe-bottom)) var(--page-pad);
   background-color:#fff;
-  background-image:var(--line-bg);
   border-top:1px solid var(--line);
 }
 .foot-inner{
