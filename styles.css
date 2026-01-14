@@ -107,6 +107,76 @@ img,svg{ max-width:100%; height:auto; }
   color:var(--ink);
 }
 
+.gap{
+  padding:64px 22px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:#fff;
+}
+.gap-inner{max-width:1100px;margin:0 auto}
+.gap-head{max-width:820px;margin-bottom:28px}
+.gap-eyebrow{
+  margin:0 0 10px 0;
+  font-weight:800;
+  letter-spacing:.18em;
+  font-size:.72rem;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.gap h2{margin:0 0 8px 0;font-weight:900;font-size:clamp(1.8rem,3.2vw,2.6rem)}
+.gap-lede{margin:0;color:var(--muted);font-size:1.05rem}
+.gap-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+.gap-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 14px 30px rgba(14,15,17,.06);
+}
+.gap-card h3{margin:0 0 10px 0;font-weight:900}
+.gap-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.55}
+.gap-card p:last-child{margin-bottom:0}
+.gap-steps{display:grid;gap:14px}
+.gap-step-title{font-weight:900;margin-bottom:6px}
+.gap-list{
+  display:grid;
+  gap:8px;
+  margin:10px 0 12px 0;
+}
+.gap-list div{
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fafafb;
+  font-weight:700;
+  color:var(--ink);
+}
+.gap-cols{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  margin:6px 0 12px 0;
+}
+.gap-bullets{
+  margin:0;
+  padding-left:18px;
+  color:var(--muted);
+}
+.gap-bullets li{margin-bottom:6px}
+.gap-summary{
+  margin-top:22px;
+  padding:16px 18px;
+  border-radius:16px;
+  background:linear-gradient(120deg,rgba(125,77,255,.12),rgba(21,209,193,.12));
+  border:1px solid rgba(125,77,255,.2);
+  font-weight:800;
+  color:var(--ink);
+}
+
 .section-head{
   max-width:1100px;
   margin:0 auto 20px auto;
@@ -263,6 +333,8 @@ img,svg{ max-width:100%; height:auto; }
   .cards{grid-template-columns:1fr}
   .pillars-band{grid-template-columns:1fr}
   .problem-grid{grid-template-columns:1fr}
+  .gap-grid{grid-template-columns:1fr}
+  .gap-cols{grid-template-columns:1fr}
   .foot-mid{grid-template-columns:1fr;row-gap:10px;min-height:auto}
   .foot-brand{justify-self:center; justify-content:center}
   .backtotop{justify-self:center}
