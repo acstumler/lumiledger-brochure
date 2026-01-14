@@ -127,7 +127,7 @@ img,svg{ max-width:100%; height:auto; }
 .gap-lede{margin:0;color:var(--muted);font-size:1.05rem}
 .gap-grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:1fr;
   gap:18px;
 }
 .gap-card.wide{grid-column:1 / -1}
@@ -197,7 +197,7 @@ img,svg{ max-width:100%; height:auto; }
 .growth-lede{margin:0;color:var(--muted);font-size:1.05rem}
 .growth-grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:1fr;
   gap:18px;
 }
 .growth-card.wide{grid-column:1 / -1}
