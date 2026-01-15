@@ -28,6 +28,13 @@
     scrollContent.addEventListener('scroll', onScroll, { passive:true });
   }
 
+  var backToTopBtn=document.getElementById('backToTopBtn');
+  if(backToTopBtn && scrollContent){
+    backToTopBtn.addEventListener('click', function(){
+      scrollContent.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
   function toCells(line){
     var out=[], cur='', q=false;
     for(var i=0;i<line.length;i++){
