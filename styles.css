@@ -176,11 +176,13 @@ img,svg{ max-width:100%; height:auto; }
   gap:18px;
 }
 .problem-card{
-  background:var(--card);
+  background:#fff;
   border:1px solid var(--line);
   border-radius:18px;
   padding:22px;
   box-shadow:0 14px 30px rgba(14,15,17,.06);
+  position:relative;
+  z-index:2;
 }
 .problem-card h3{margin:0 0 10px 0;font-weight:900}
 .problem-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.55}
@@ -242,11 +244,13 @@ img,svg{ max-width:100%; height:auto; }
 }
 .gap-card.wide{grid-column:1 / -1}
 .gap-card{
-  background:var(--card);
+  background:#fff;
   border:1px solid var(--line);
   border-radius:18px;
   padding:22px;
   box-shadow:0 14px 30px rgba(14,15,17,.06);
+  position:relative;
+  z-index:2;
 }
 .gap-card h3{margin:0 0 10px 0;font-weight:900}
 .gap-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.65}
@@ -321,11 +325,13 @@ img,svg{ max-width:100%; height:auto; }
 }
 .growth-card.wide{grid-column:1 / -1}
 .growth-card{
-  background:var(--card);
+  background:#fff;
   border:1px solid var(--line);
   border-radius:18px;
   padding:22px;
   box-shadow:0 14px 30px rgba(14,15,17,.06);
+  position:relative;
+  z-index:2;
 }
 .growth-card h3{margin:0 0 10px 0;font-weight:900}
 .growth-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.65}
@@ -592,12 +598,6 @@ img,svg{ max-width:100%; height:auto; }
     border-top:none;
   }
 
-  .problem-card,
-  .gap-card,
-  .growth-card{
-    background:rgba(255,255,255,.8);
-    border-color:rgba(231,232,236,.6);
-  }
 
 }
 @media (max-width:560px){
