@@ -59,7 +59,7 @@ img,svg{ max-width:100%; height:auto; }
   color:#fff;
 }
 .brand-subtitle{
-  font-size:.85rem;
+  font-size:.75em;
   font-weight:600;
   letter-spacing:.02em;
   text-transform:none;
@@ -458,7 +458,6 @@ img,svg{ max-width:100%; height:auto; }
   .brand-badge{width:54px;height:54px;border-radius:10px}
   .brand-icon{height:38px}
   .brand-word{font-size:1.4rem}
-  .brand-subtitle{font-size:.75rem}
   .cover-copy{margin-left:18px;padding:104px var(--page-pad) 70px}
   .problem,
   .gap,
@@ -530,7 +529,6 @@ img,svg{ max-width:100%; height:auto; }
   .brand-badge{width:46px;height:46px;border-radius:9px}
   .brand-icon{height:32px}
   .brand-word{font-size:1.2rem;letter-spacing:.05em}
-  .brand-subtitle{font-size:.7rem}
   .cover-copy{padding:124px var(--page-pad) 64px}
   .cover-copy h1{margin-top:.35rem}
   .problem,
