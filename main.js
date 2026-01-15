@@ -10,7 +10,7 @@
 
     function updateSwoosh(){
       if(!swooshSvg) return;
-      var y = scrollContent.scrollTop * -0.05;
+      var y = scrollContent.scrollTop * -0.08;
       swooshSvg.style.transform = 'translateY(' + y + 'px)';
     }
 
