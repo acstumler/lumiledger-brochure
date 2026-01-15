@@ -9,7 +9,7 @@
     var ticking=false;
 
     function updateSwoosh(){
-      var offset=Math.round(lastScroll * -0.03);
+      var offset=Math.round(lastScroll * -0.12);
       root.style.setProperty('--swoosh-shift', offset + 'px');
     }
 
