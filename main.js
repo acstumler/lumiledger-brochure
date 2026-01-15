@@ -1,20 +1,20 @@
 (function(){
   var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
 
-  var hasSwoosh=document.querySelector('.problem, .gap, .growth');
+  var swooshSvg=document.getElementById('brochureSwoosh');
+  var scrollContent=document.querySelector('.brochure-scroll-content');
   var reduceMotion=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(hasSwoosh && !reduceMotion){
-    var root=document.documentElement;
-    var lastScroll=window.scrollY||0;
+  
+  if(swooshSvg && scrollContent && !reduceMotion){
     var ticking=false;
 
     function updateSwoosh(){
-      var offset=Math.round(lastScroll * -0.12);
-      root.style.setProperty('--swoosh-shift', offset + 'px');
+      if(!swooshSvg) return;
+      var y = scrollContent.scrollTop * -0.05;
+      swooshSvg.style.transform = 'translateY(' + y + 'px)';
     }
 
     function onScroll(){
-      lastScroll=window.scrollY||0;
       if(!ticking){
         window.requestAnimationFrame(function(){
           updateSwoosh();
@@ -25,8 +25,7 @@
     }
 
     updateSwoosh();
-    window.addEventListener('scroll', onScroll, { passive:true });
-    window.addEventListener('resize', onScroll);
+    scrollContent.addEventListener('scroll', onScroll, { passive:true });
   }
 
   function toCells(line){
