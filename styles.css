@@ -511,14 +511,19 @@ img,svg{ max-width:100%; height:auto; }
 }
 @media (max-width:900px){
   .brochure-header{
-    top:10px;
-    left:10px;
-    right:10px;
-    padding:calc(10px + var(--safe-top)) 1rem 10px 1rem;
+    top:8px;
+    left:8px;
+    right:8px;
+    padding:calc(8px + var(--safe-top)) .9rem 8px .9rem;
   }
-  .brand-badge{width:50px;height:50px;border-radius:10px}
-  .brand-icon{height:34px}
-  .brand-word{font-size:1.35rem}
+  .brand-badge{width:48px;height:48px;border-radius:10px}
+  .brand-icon{height:32px}
+  .brand-word{font-size:1.25rem}
+  .brand-subtitle{font-size:.7em}
+  .btn-demo{
+    padding:.4rem .8rem;
+    font-size:.8rem;
+  }
   .cover-copy{margin-left:18px;padding:90px var(--page-pad) 0}
   .problem,
   .gap,
@@ -527,8 +532,20 @@ img,svg{ max-width:100%; height:auto; }
   }
 }
 @media (max-width:740px){
+  .brochure-header{
+    padding:calc(6px + var(--safe-top)) .8rem 6px .8rem;
+  }
+  .brand-badge{width:44px;height:44px}
+  .brand-icon{height:30px}
+  .brand-word{font-size:1.15rem}
+  .brand-subtitle{font-size:.68em}
+  .btn-demo{
+    padding:.38rem .75rem;
+    font-size:.78rem;
+  }
   .cover-copy{margin-left:18px;padding:100px var(--page-pad) 0}
-  .cover-copy h1{margin-top:.25rem}
+  .cover-copy h1{margin-top:.25rem;font-size:clamp(1.8rem,6vw,2.4rem)}
+  .cover-copy p{font-size:clamp(1rem,2.2vw,1.2rem)}
   .cover{min-height:90vh}
   .how-grid{grid-template-columns:1fr}
   .wins-grid{grid-template-columns:1fr}
@@ -554,6 +571,10 @@ img,svg{ max-width:100%; height:auto; }
   .foot-badge img{ height:18px; }
   .foot-brand{ gap:8px; }
   .foot-word{ font-size:1.1rem; letter-spacing:.06em; }
+  .btn-demo-footer{
+    padding:.7rem 1.5rem;
+    font-size:.9rem;
+  }
 
   .demo-inner{
     grid-template-columns:1fr;
@@ -579,21 +600,28 @@ img,svg{ max-width:100%; height:auto; }
   .brochure-header{
     left:8px;
     right:8px;
-    padding:calc(8px + var(--safe-top)) .9rem 8px .9rem;
+    top:6px;
+    padding:calc(6px + var(--safe-top)) .7rem 6px .7rem;
   }
-  .brand-badge{width:42px;height:42px;border-radius:9px}
-  .brand-icon{height:28px}
-  .brand-word{font-size:1.1rem;letter-spacing:.04em}
+  .brand-badge{width:40px;height:40px;border-radius:9px}
+  .brand-icon{height:26px}
+  .brand-word{font-size:1rem;letter-spacing:.04em}
+  .brand-subtitle{display:none}
   .btn-demo{
-    padding:.35rem .7rem;
-    font-size:.75rem;
-    border-radius:16px;
+    padding:.32rem .65rem;
+    font-size:.72rem;
+    border-radius:14px;
   }
   .cover-copy{padding:110px var(--page-pad) 0}
-  .cover-copy h1{margin-top:.35rem}
+  .cover-copy h1{margin-top:.35rem;font-size:clamp(1.6rem,7vw,2rem);line-height:1.25}
+  .cover-copy p{font-size:clamp(.95rem,2.5vw,1.1rem);margin:0 0 0 .4rem}
   .problem,
   .gap,
   .growth{
-    padding:44px var(--page-pad);
+    padding:40px var(--page-pad);
+  }
+  .btn-demo-footer{
+    padding:.65rem 1.3rem;
+    font-size:.85rem;
   }
 }
