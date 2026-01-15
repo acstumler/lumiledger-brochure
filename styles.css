@@ -606,7 +606,7 @@ img,svg{ max-width:100%; height:auto; }
   .brand-badge{width:40px;height:40px;border-radius:9px}
   .brand-icon{height:26px}
   .brand-word{font-size:1rem;letter-spacing:.04em}
-  .brand-subtitle{display:none}
+  .brand-subtitle{font-size:.65em}
   .btn-demo{
     padding:.32rem .65rem;
     font-size:.72rem;
