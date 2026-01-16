@@ -75,6 +75,7 @@ img,svg{ max-width:100%; height:auto; }
 .cover-copy.invert p{color:var(--muted); text-shadow:none; text-align:left; margin-left:0;}
 .cover-copy h1{margin:0 0 .6rem 0;font-size:clamp(1.8rem,3.8vw,3.2rem);line-height:1.2;font-weight:600;letter-spacing:.01em;text-transform:uppercase;text-align:left;color:var(--ink)}
 .cover-copy p{margin:0 0 1rem 0;color:var(--muted);font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.7;opacity:.95;max-width:1200px;text-align:left}
+.hero-subheadline{margin-top:1.2rem!important;font-size:clamp(1.05rem,1.8vw,1.4rem)!important;line-height:1.65!important;max-width:1000px}
 .cover-position{margin-top:1rem!important;font-weight:600;text-align:left}
 
 .pillars-band{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:18px 22px;background:#fff;border-bottom:1px solid var(--line)}
@@ -459,6 +460,34 @@ img,svg{ max-width:100%; height:auto; }
 .why-content p:last-child{
   margin-bottom:0;
 }
+.goal-statement{
+  margin-top:1.5rem!important;
+  font-weight:500;
+  font-style:normal;
+  text-align:left;
+}
+
+/* Positioning Line Section */
+.positioning-section{
+  position:relative;
+  padding:48px var(--page-pad);
+  background:transparent;
+}
+.positioning-inner{
+  max-width:1100px;
+  margin:0 auto;
+  position:relative;
+  z-index:1;
+  text-align:center;
+}
+.positioning-line{
+  margin:0;
+  color:var(--muted);
+  font-size:1.05rem;
+  line-height:1.65;
+  font-weight:400;
+  font-style:normal;
+}
 
 .thesis-section{
   position:relative;
@@ -502,23 +531,18 @@ img,svg{ max-width:100%; height:auto; }
 .thesis-content p:last-child{
   margin-bottom:0;
 }
-.thesis-link-btn{
-  display:inline-flex;
-  align-items:center;
-  margin-top:28px;
-  padding:.85rem 1.6rem;
-  border-radius:999px;
-  background:linear-gradient(90deg, #7d4dff 0%, #15d1c1 100%);
-  color:#fff;
-  font-weight:700;
-  font-size:.95rem;
+.thesis-link{
+  display:inline-block;
+  margin-top:24px;
+  color:var(--ink);
+  font-weight:500;
+  font-size:1rem;
   text-decoration:none;
-  transition:all .25s ease;
-  box-shadow:0 4px 16px rgba(125,77,255,.35), 0 2px 8px rgba(21,209,193,.25);
+  transition:opacity .2s ease;
+  opacity:.85;
 }
-.thesis-link-btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 28px rgba(125,77,255,.45), 0 4px 14px rgba(21,209,193,.35);
+.thesis-link:hover{
+  opacity:1;
 }
 
 .nav-section{
