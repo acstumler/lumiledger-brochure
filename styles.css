@@ -112,21 +112,18 @@ img,svg{ max-width:100%; height:auto; }
   align-items:center;
   padding:.45rem .95rem;
   border-radius:20px;
-  background:rgba(255,255,255,.18);
+  background:linear-gradient(90deg, #7d4dff 0%, #15d1c1 100%);
   color:#fff;
-  font-weight:600;
+  font-weight:700;
   font-size:.85rem;
   text-decoration:none;
   transition:all .25s ease;
-  border:1px solid rgba(255,255,255,.25);
-  backdrop-filter:blur(4px);
-  -webkit-backdrop-filter:blur(4px);
+  border:none;
+  box-shadow:0 2px 8px rgba(125,77,255,.25), 0 1px 4px rgba(21,209,193,.2);
 }
 .btn-demo:hover{
-  background:rgba(255,255,255,.28);
-  border-color:rgba(255,255,255,.4);
   transform:translateY(-1px);
-  box-shadow:0 4px 12px rgba(255,255,255,.15);
+  box-shadow:0 4px 16px rgba(125,77,255,.35), 0 2px 8px rgba(21,209,193,.3);
 }
 .brochure-swoosh{
   position:absolute;
