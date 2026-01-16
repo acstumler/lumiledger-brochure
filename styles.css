@@ -593,7 +593,7 @@ img,svg{ max-width:100%; height:auto; }
 .nav-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:12px;
+  gap:8px;
 }
 .nav-card{
   background:rgba(255,255,255,0.6);
