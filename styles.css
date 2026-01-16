@@ -23,6 +23,7 @@ body{
   font-family:'Montserrat',sans-serif;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+  scroll-padding-top:100px;
 }
 
 img,svg{ max-width:100%; height:auto; }
@@ -158,7 +159,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:100vh;
   display:flex;
   align-items:center;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   border-bottom:1px solid var(--line);
   background-color:transparent;
 }
@@ -224,7 +225,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:100vh;
   display:flex;
   align-items:center;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
   background-color:transparent;
@@ -306,7 +307,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:100vh;
   display:flex;
   align-items:center;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   border-bottom:1px solid var(--line);
   background-color:transparent;
 }
@@ -423,7 +424,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:60vh;
   display:flex;
   align-items:center;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   background:transparent;
 }
 .why-inner{
@@ -470,7 +471,7 @@ img,svg{ max-width:100%; height:auto; }
 /* Positioning Line Section */
 .positioning-section{
   position:relative;
-  padding:48px var(--page-pad);
+  padding:100px var(--page-pad) 48px;
   background:transparent;
 }
 .positioning-inner{
@@ -494,7 +495,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:60vh;
   display:flex;
   align-items:center;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   background:transparent;
 }
 .thesis-inner{
@@ -547,7 +548,7 @@ img,svg{ max-width:100%; height:auto; }
 
 .nav-section{
   position:relative;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   background:transparent;
 }
 .nav-inner{
@@ -623,7 +624,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:100vh;
   display:flex;
   align-items:center;
-  padding:64px var(--page-pad);
+  padding:120px var(--page-pad) 64px;
   background-color:transparent;
 }
 .content-inner{
@@ -885,7 +886,7 @@ img,svg{ max-width:100%; height:auto; }
   .thesis-section,
   .nav-section,
   .content-section{
-    padding:52px var(--page-pad);
+    padding:100px var(--page-pad) 52px;
   }
 }
 @media (max-width:740px){
@@ -922,7 +923,7 @@ img,svg{ max-width:100%; height:auto; }
   .nav-section,
   .content-section{
     min-height:auto;
-    padding:48px var(--page-pad);
+    padding:90px var(--page-pad) 48px;
   }
   .foot-mid{grid-template-columns:1fr;row-gap:10px;min-height:auto}
   .foot-brand{justify-self:center; justify-content:center}
@@ -979,7 +980,7 @@ img,svg{ max-width:100%; height:auto; }
   .thesis-section,
   .nav-section,
   .content-section{
-    padding:40px var(--page-pad);
+    padding:85px var(--page-pad) 40px;
   }
   .btn-demo-footer{
     padding:.65rem 1.3rem;
