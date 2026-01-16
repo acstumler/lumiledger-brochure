@@ -71,11 +71,11 @@ img,svg{ max-width:100%; height:auto; }
   border:none;
   text-align:left;
 }
-.cover-copy.invert h1{color:var(--ink); text-shadow:none; text-align:left; margin-left:0;}
-.cover-copy.invert p{color:var(--muted); text-shadow:none; text-align:left; margin-left:0;}
-.cover-copy h1{margin:0 0 .6rem 0;font-size:clamp(1.8rem,3.8vw,3.2rem);line-height:1.2;font-weight:600;letter-spacing:0;text-transform:uppercase;text-align:left;color:var(--ink)}
-.cover-copy p{margin:0 0 1rem 0;color:var(--muted);font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.7;opacity:.95;max-width:1200px;text-align:left}
-.hero-subheadline{margin-top:1.2rem!important;font-size:clamp(1.05rem,1.8vw,1.4rem)!important;line-height:1.65!important;max-width:1000px;text-align:left!important;color:#4a4d55!important;opacity:1!important;margin-left:0!important}
+.cover-copy.invert h1{color:var(--ink); text-shadow:none; text-align:left; margin-left:0; padding-left:0;}
+.cover-copy.invert p{color:var(--muted); text-shadow:none; text-align:left; margin-left:0; padding-left:0;}
+.cover-copy h1{margin:0 0 1rem 0;padding-left:0;font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.15;font-weight:700;letter-spacing:0;text-transform:uppercase;text-align:left;color:var(--ink)}
+.cover-copy p{margin:0 0 1rem 0;padding-left:0;color:var(--muted);font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.7;opacity:.95;max-width:1200px;text-align:left}
+.hero-subheadline{margin:1.2rem 0 0 0!important;padding-left:0!important;font-size:clamp(1.05rem,1.8vw,1.4rem)!important;line-height:1.65!important;max-width:1000px;text-align:left!important;color:#4a4d55!important;opacity:1!important}
 .cover-position{margin-top:1rem!important;font-weight:600;text-align:left}
 
 .pillars-band{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:18px 22px;background:#fff;border-bottom:1px solid var(--line)}
@@ -901,8 +901,8 @@ img,svg{ max-width:100%; height:auto; }
     font-size:.78rem;
   }
   .cover-copy{padding:100px clamp(1rem, 3vw, 2rem) 2rem}
-  .cover-copy h1{margin-top:.25rem;font-size:clamp(1.8rem,6vw,2.4rem)}
-  .cover-copy p{font-size:clamp(1rem,2.2vw,1.2rem)}
+  .cover-copy h1{margin-top:0;margin-left:0;padding-left:0;font-size:clamp(2.2rem,6.5vw,3rem)}
+  .cover-copy p{font-size:clamp(1rem,2.2vw,1.2rem);margin-left:0;padding-left:0}
   .cover{min-height:90vh}
   .how-grid{grid-template-columns:1fr}
   .wins-grid{grid-template-columns:1fr}
@@ -970,8 +970,8 @@ img,svg{ max-width:100%; height:auto; }
     border-radius:14px;
   }
   .cover-copy{padding:110px clamp(1rem, 3vw, 2rem) 2rem}
-  .cover-copy h1{margin-top:.35rem;font-size:clamp(1.6rem,7vw,2rem);line-height:1.25;margin-left:0}
-  .cover-copy p{font-size:clamp(.95rem,2.5vw,1.1rem);margin:0;margin-left:0}
+  .cover-copy h1{margin-top:0;margin-left:0;padding-left:0;font-size:clamp(2rem,7vw,2.6rem);line-height:1.2}
+  .cover-copy p{font-size:clamp(.95rem,2.5vw,1.1rem);margin:0;margin-left:0;padding-left:0}
   .problem,
   .gap,
   .growth,
