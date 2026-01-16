@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="format-detection" content="telephone=no,email=no,address=no" />
   <title>Product Architecture — LumiLedger</title>
-  <meta name="description" content="How data flows, how logic is applied, and where boundaries exist" />
+  <meta name="description" content="How LumiLedger works at a structural level — not a feature level" />
   <meta property="og:title" content="Product Architecture — LumiLedger" />
-  <meta property="og:description" content="How data flows, how logic is applied, and where boundaries exist" />
+  <meta property="og:description" content="How LumiLedger works at a structural level — not a feature level" />
   <meta property="og:image" content="/assets/og-image.png" />
   <meta name="theme-color" content="#0e0f11" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,116 +65,136 @@
     </svg>
 
     <div class="brochure-scroll-content">
+      <!-- Opening Framing -->
       <section id="architecture" class="content-section">
         <div class="content-inner">
           <div class="content-head">
-            <h1>Product Architecture</h1>
-            <p class="content-lede">How data flows, how logic is applied, and where boundaries exist</p>
+            <h1>Product architecture</h1>
+            <p class="content-lede">LumiLedger is designed as a preparation and interpretation layer — not a system of record.</p>
+            <p class="content-lede">Its architecture reflects that intent. Each component exists to improve clarity, preserve traceability, and support professional review without asserting final accounting authority.</p>
+            <p class="content-lede">The goal is not complexity.<br>It is reliability.</p>
           </div>
 
           <div class="content-grid">
-            <article class="content-card">
-              <h3>Design philosophy</h3>
-              <p>LumiLedger is architected around a core principle: data preparation should be transparent, traceable, and grounded in accounting logic.</p>
-              <p>The system does not attempt to replace professional judgment. It prepares financial data in a way that makes professional judgment easier to apply.</p>
-              <p>Every design decision reflects this boundary.</p>
-            </article>
-
-            <article class="content-card">
-              <h3>Source-driven data model</h3>
-              <p>LumiLedger is built on a source-driven architecture. Every transaction must be tied to a known, connected financial account.</p>
-              <p>This approach ensures that coverage is explicit. If an account is not connected, its activity is not included. This prevents silent incompleteness.</p>
-              <p>Users always know what is being measured and what is not.</p>
-            </article>
-
+            <!-- Design Principles -->
             <article class="content-card wide">
-              <h3>Data flow</h3>
+              <h3>Design principles</h3>
+              <p>LumiLedger's architecture is guided by a small set of principles:</p>
+              
               <div class="arch-flow">
                 <div class="flow-step">
-                  <div class="flow-step-title">Account connection</div>
-                  <p>Business owners connect bank accounts, credit cards, and loans through secure integrations. These become the system's known sources of financial activity.</p>
+                  <div class="flow-step-title">Source-first</div>
+                  <p>All financial activity is anchored to a known source account. Nothing is inferred without context.</p>
                 </div>
                 <div class="flow-step">
-                  <div class="flow-step-title">Transaction ingestion</div>
-                  <p>Transactions are imported daily from connected accounts. Each transaction includes date, amount, description, and source account information.</p>
+                  <div class="flow-step-title">Transparency over automation</div>
+                  <p>Every classification and calculation is reviewable. The system never hides uncertainty.</p>
                 </div>
                 <div class="flow-step">
-                  <div class="flow-step-title">Journal entry generation</div>
-                  <p>For each transaction, a journal entry is created. One side is anchored to the known source account. The offsetting side is classified using machine-learned logic and AI assistance.</p>
+                  <div class="flow-step-title">Deterministic where accuracy matters</div>
+                  <p>Traditional accounting logic is used wherever outcomes must be consistent and explainable.</p>
                 </div>
                 <div class="flow-step">
-                  <div class="flow-step-title">Financial statement construction</div>
-                  <p>Journal entries are aggregated into financial statements following standard accounting structure. Income Statements, Balance Sheets, and General Ledger views are generated automatically.</p>
+                  <div class="flow-step-title">Interpretation without authority</div>
+                  <p>LumiLedger explains results but does not finalize them.</p>
                 </div>
                 <div class="flow-step">
-                  <div class="flow-step-title">Narrative generation</div>
-                  <p>KPIs are calculated from the financial statements. A plain-English narrative is generated to explain trends, changes, and notable patterns in performance.</p>
+                  <div class="flow-step-title">Simplicity at the surface</div>
+                  <p>Complexity is handled in the background so users are not burdened with it.</p>
                 </div>
               </div>
+
+              <p style="margin-top: 16px;">These principles govern all downstream behavior.</p>
             </article>
 
-            <article class="content-card">
-              <h3>Classification logic</h3>
-              <p>LumiLedger classifies transactions using a combination of machine-learned patterns and AI-assisted reasoning.</p>
-              <p>Each classification is transparent and includes a confidence score. Users and advisors can review, adjust, or override any classification.</p>
-              <p>Over time, the system learns from corrections and adapts to business-specific patterns.</p>
-            </article>
-
-            <article class="content-card">
-              <h3>Handling commingled accounts</h3>
-              <p>LumiLedger recognizes that many small businesses use personal accounts for business activity.</p>
-              <p>Personal accounts can be connected intentionally. Each transaction is classified as either business or personal at the transaction level.</p>
-              <p>This allows for accurate separation while maintaining complete visibility into all activity.</p>
-            </article>
-
-            <article class="content-card">
-              <h3>Balance sheet integrity</h3>
-              <p>LumiLedger maintains balance sheet integrity by tracking all connected account balances and ensuring that journal entries always balance.</p>
-              <p>Cash and credit card liabilities are reconciled against known account balances. Discrepancies are surfaced rather than hidden.</p>
-              <p>This prevents drift between reported financials and actual account positions.</p>
-            </article>
-
-            <article class="content-card">
-              <h3>Data boundaries</h3>
-              <p>LumiLedger does not infer activity from accounts that are not connected. It does not estimate missing data or fill gaps with assumptions.</p>
-              <p>Coverage is explicit. Completeness is visible.</p>
-              <p>This boundary is intentional and reflects a commitment to transparency over false confidence.</p>
-            </article>
-
+            <!-- End-to-End Data Flow -->
             <article class="content-card wide">
-              <h3>System boundaries</h3>
-              <p>LumiLedger does not make tax elections, enforce accounting method choices, or assert compliance authority.</p>
-              <p>It generates financial statements for understanding and analysis, not for filing or formal compliance.</p>
-              <p>When compliance is required, LumiLedger hands off clean, structured data to an accounting platform where professional judgment is applied.</p>
-              <p>This boundary preserves professional authority and prevents the system from overstepping its role.</p>
+              <h3>How data flows through LumiLedger</h3>
+              <p>LumiLedger follows a deliberate, sequential flow from raw activity to understanding:</p>
+              
+              <div class="arch-flow">
+                <div class="flow-step">
+                  <div class="flow-step-title">1. Account connection</div>
+                  <p>Users connect the financial accounts used in the business, including bank accounts, credit cards, and loans. These accounts establish the known sources of financial activity.</p>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-title">2. Transaction ingestion</div>
+                  <p>Transaction data is ingested directly from connected sources. Each transaction retains its original attributes and source context.</p>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-title">3. Source anchoring</div>
+                  <p>Every transaction is first anchored to its source account. This establishes one side of the journal entry and prevents loss of traceability.</p>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-title">4. Classification logic</div>
+                  <p>The offsetting side of each entry is determined using structured logic and machine-learned classification. Uncertainty is preserved rather than concealed.</p>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-title">5. Structured outputs</div>
+                  <p>Once entries are established, LumiLedger produces structured financial views that can be reviewed, adjusted, and exported.</p>
+                </div>
+              </div>
+
+              <p style="margin-top: 16px;">No step assumes completeness or correctness without visibility.</p>
             </article>
 
+            <!-- Journal Logic & Classification -->
             <article class="content-card">
-              <h3>Export and integration</h3>
-              <p>LumiLedger supports clean export of journal entries, financial statements, and transaction detail.</p>
-              <p>Data can be transferred to QuickBooks, Excel, or other accounting platforms when formal record-keeping is required.</p>
-              <p>This flexibility allows LumiLedger to serve as a preparation layer without locking users into a single ecosystem.</p>
+              <h3>Journal logic and classification</h3>
+              <p>At its core, LumiLedger applies standard journal-entry logic.</p>
+              <p>For each transaction:</p>
+              <ul style="margin: 12px 0; padding-left: 20px; color: var(--muted); line-height: 1.65;">
+                <li>One side of the entry is assigned to a known source account</li>
+                <li>The opposing side is classified based on transaction context</li>
+              </ul>
+              <p>Classification is treated as a suggestion, not a mandate. Results are transparent, editable, and traceable back to original activity.</p>
+              <p>LumiLedger favors consistency and explainability over aggressive automation. When certainty is low, that uncertainty is surfaced rather than masked.</p>
             </article>
 
+            <!-- Financial Statement Generation -->
             <article class="content-card">
-              <h3>Security and privacy</h3>
-              <p>All financial data is encrypted in transit and at rest. Account connections use industry-standard secure integrations.</p>
-              <p>Data is never sold or used for purposes outside of the user's financial preparation.</p>
-              <p>Access controls ensure that only authorized users and advisors can view financial information.</p>
+              <h3>Financial statement generation</h3>
+              <p>From structured journal entries, LumiLedger generates core financial statements for analysis and review, including:</p>
+              <ul style="margin: 12px 0; padding-left: 20px; color: var(--muted); line-height: 1.65;">
+                <li>Income Statement</li>
+                <li>Balance Sheet</li>
+                <li>General Ledger views</li>
+              </ul>
+              <p>These statements are designed to be:</p>
+              <ul style="margin: 12px 0; padding-left: 20px; color: var(--muted); line-height: 1.65;">
+                <li>Internally consistent</li>
+                <li>Chronologically coherent</li>
+                <li>Exportable for professional use</li>
+              </ul>
+              <p>They are intended for understanding and preparation, not as a substitute for a firm's system of record or compliance workflow.</p>
             </article>
 
+            <!-- Interpretation & Storytelling Layer -->
             <article class="content-card wide">
-              <h3>Scalability and performance</h3>
-              <p>LumiLedger is built to handle businesses with hundreds of transactions per month across multiple accounts.</p>
-              <p>The system processes transactions in near real-time and updates financial statements daily.</p>
-              <p>Performance remains consistent as transaction volume grows, ensuring that the system can support businesses as they scale.</p>
+              <h3>Interpretation and storytelling</h3>
+              <p>Once financial structure is established, LumiLedger applies an interpretation layer.</p>
+              <p>Key metrics are calculated in the background and translated into a plain-English financial narrative that explains:</p>
+              <ul style="margin: 12px 0; padding-left: 20px; color: var(--muted); line-height: 1.65;">
+                <li>What changed</li>
+                <li>When it changed</li>
+                <li>Why it matters</li>
+              </ul>
+              <p>This narrative is contextual and time-aware, comparing performance day over day, month over month, quarter over quarter, and year over year — based only on available data.</p>
+              <p>The goal is comprehension, not instruction.</p>
             </article>
 
-            <article class="content-card">
-              <h3>Continuous improvement</h3>
-              <p>Classification logic improves over time as more data is processed and more corrections are applied.</p>
-              <p>System updates are deployed regularly to improve accuracy, add features, and refine the user experience.</p>
-              <p>Feedback from users and accounting professionals is incorporated into ongoing development.</p>
+            <!-- Boundaries & Non-Goals -->
+            <article class="content-card wide">
+              <h3>What this architecture does not attempt to do</h3>
+              <p>LumiLedger is intentionally bounded.</p>
+              <p>It does not:</p>
+              <ul style="margin: 12px 0; padding-left: 20px; color: var(--muted); line-height: 1.65;">
+                <li>Serve as the system of record</li>
+                <li>Enforce accounting elections or policies</li>
+                <li>Close books or assert compliance readiness</li>
+                <li>Replace professional judgment or review</li>
+              </ul>
+              <p>These boundaries allow LumiLedger to remain flexible, explainable, and compatible with a wide range of professional workflows.</p>
             </article>
           </div>
         </div>
@@ -206,4 +226,3 @@
   <script src="/main.js"></script>
 </body>
 </html>
-
