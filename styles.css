@@ -6,8 +6,8 @@
   --line:#e7e8ec;
   --line-bg: repeating-linear-gradient(180deg, rgba(14,15,17,.06) 0 1px, transparent 1px 48px);
   --page-pad: 1.5rem;
-  --gradA:#9a7dff;
-  --gradB:#5dd9cb;
+  --gradA:#7d4dff;
+  --gradB:#15d1c1;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -64,12 +64,12 @@ img,svg{ max-width:100%; height:auto; }
   padding:2rem var(--page-pad);
   margin:0 auto;
   padding-top:80px;
-  background:linear-gradient(135deg, rgba(154,125,255,0.25), rgba(93,217,203,0.25));
+  background:linear-gradient(135deg, rgba(125,77,255,0.25), rgba(21,209,193,0.25));
   backdrop-filter:blur(24px);
   -webkit-backdrop-filter:blur(24px);
   border-radius:32px;
   border:1px solid rgba(255,255,255,0.3);
-  box-shadow:0 16px 48px rgba(154,125,255,0.15), 0 8px 24px rgba(93,217,203,0.1), inset 0 1px 0 rgba(255,255,255,0.4);
+  box-shadow:0 16px 48px rgba(125,77,255,0.15), 0 8px 24px rgba(21,209,193,0.1), inset 0 1px 0 rgba(255,255,255,0.4);
 }
 .cover-copy.invert h1{color:#fff; text-shadow:0 2px 12px rgba(0,0,0,0.1);}
 .cover-copy.invert p{color:rgba(255,255,255,0.95); text-shadow:0 1px 8px rgba(0,0,0,0.08);}
