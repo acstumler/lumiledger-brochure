@@ -74,7 +74,7 @@ img,svg{ max-width:100%; height:auto; }
 }
 .cover-copy.invert h1{color:var(--ink); text-shadow:none; text-align:left; margin-left:0; padding-left:0;}
 .cover-copy.invert p{color:var(--muted); text-shadow:none; text-align:left; margin-left:0; padding-left:0;}
-.cover-copy h1{margin:0 0 1rem 0;padding-left:0;font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.15;font-weight:400;letter-spacing:0;text-transform:uppercase;text-align:left;color:var(--ink)}
+.cover-copy h1{margin:0 0 1rem 0;padding-left:0;font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.15;font-weight:500;letter-spacing:0;text-transform:uppercase;text-align:left;color:var(--ink)}
 .cover-copy p{margin:0 0 1rem 0;padding-left:0;color:var(--muted);font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.7;opacity:.95;max-width:1200px;text-align:left}
 .hero-subheadline{margin:1.2rem 0 0 0!important;padding-left:0!important;font-size:clamp(1.05rem,1.8vw,1.4rem)!important;line-height:1.65!important;max-width:1000px;text-align:left!important;color:#4a4d55!important;opacity:1!important}
 .cover-position{margin-top:1rem!important;font-weight:400;text-align:left}
@@ -178,7 +178,7 @@ img,svg{ max-width:100%; height:auto; }
   color:var(--muted);
   text-transform:uppercase;
 }
-.problem h2{margin:0 0 8px 0;padding-left:0;font-weight:400;font-size:clamp(2rem,3.2vw,2.6rem);text-align:left}
+.problem h2{margin:0 0 8px 0;padding-left:0;font-weight:500;font-size:clamp(2rem,3.2vw,2.6rem);text-align:left}
 .problem-lede{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.7}
 .problem-grid{
   display:grid;
@@ -194,7 +194,7 @@ img,svg{ max-width:100%; height:auto; }
   position:relative;
   z-index:2;
 }
-.problem-card h3{margin:0 0 10px 0;padding-left:0;font-weight:400;text-align:left}
+.problem-card h3{margin:0 0 10px 0;padding-left:0;font-weight:500;text-align:left}
 .problem-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.55}
 .problem-card p:last-of-type{margin-bottom:0}
 .problem-list{
@@ -245,7 +245,7 @@ img,svg{ max-width:100%; height:auto; }
   color:var(--muted);
   text-transform:uppercase;
 }
-.gap h2{margin:0 0 8px 0;padding-left:0;font-weight:400;font-size:clamp(2rem,3.2vw,2.6rem);text-align:left}
+.gap h2{margin:0 0 8px 0;padding-left:0;font-weight:500;font-size:clamp(2rem,3.2vw,2.6rem);text-align:left}
 .gap-lede{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.7}
 .gap-grid{
   display:grid;
@@ -262,7 +262,7 @@ img,svg{ max-width:100%; height:auto; }
   position:relative;
   z-index:2;
 }
-.gap-card h3{margin:0 0 10px 0;padding-left:0;font-weight:400;text-align:left}
+.gap-card h3{margin:0 0 10px 0;padding-left:0;font-weight:500;text-align:left}
 .gap-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.65}
 .gap-card p:last-child{margin-bottom:0}
 .gap-steps{display:grid;gap:14px}
@@ -326,7 +326,7 @@ img,svg{ max-width:100%; height:auto; }
   color:var(--muted);
   text-transform:uppercase;
 }
-.growth h2{margin:0 0 8px 0;padding-left:0;font-weight:400;font-size:clamp(2rem,3.2vw,2.6rem);text-align:left}
+.growth h2{margin:0 0 8px 0;padding-left:0;font-weight:500;font-size:clamp(2rem,3.2vw,2.6rem);text-align:left}
 .growth-lede{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.7}
 .growth-grid{
   display:grid;
@@ -343,7 +343,7 @@ img,svg{ max-width:100%; height:auto; }
   position:relative;
   z-index:2;
 }
-.growth-card h3{margin:0 0 10px 0;padding-left:0;font-weight:400;text-align:left}
+.growth-card h3{margin:0 0 10px 0;padding-left:0;font-weight:500;text-align:left}
 .growth-card p{margin:0 0 12px 0;color:var(--muted);line-height:1.65}
 .growth-card p:last-child{margin-bottom:0}
 .growth-list{
@@ -379,7 +379,7 @@ img,svg{ max-width:100%; height:auto; }
 .section-head h2{
   margin:0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   font-size:clamp(1.6rem,3.1vw,2.3rem);
   text-align:left;
 }
@@ -395,7 +395,7 @@ img,svg{ max-width:100%; height:auto; }
 .how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1100px;margin:0 auto}
 .how-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
 .how-num{font-weight:400;color:var(--gradA);margin-bottom:6px}
-.how-card h3{margin:0 0 6px 0;padding-left:0;text-align:left}
+.how-card h3{margin:0 0 6px 0;padding-left:0;font-weight:500;text-align:left}
 .how-card p{margin:0;color:var(--muted)}
 
 .pullquote{padding:70px 22px;border-bottom:1px solid var(--line);background:var(--paper)}
@@ -404,7 +404,7 @@ img,svg{ max-width:100%; height:auto; }
 .wins{padding:56px 22px;border-bottom:1px solid var(--line);background:#fff}
 .wins-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .win{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-.win h4{margin:0 0 6px 0;padding-left:0;font-weight:400;text-align:left}
+.win h4{margin:0 0 6px 0;padding-left:0;font-weight:500;text-align:left}
 .win p{margin:0;color:var(--muted)}
 
 .compare{padding:56px 22px;border-bottom:1px solid var(--line);background:#fff}
@@ -449,7 +449,7 @@ img,svg{ max-width:100%; height:auto; }
 .why-head h2{
   margin:0 0 8px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   font-size:clamp(2rem,3.2vw,2.6rem);
   text-align:left;
 }
@@ -522,7 +522,7 @@ img,svg{ max-width:100%; height:auto; }
 .thesis-head h2{
   margin:0 0 8px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   font-size:clamp(2rem,3.2vw,2.6rem);
   text-align:left;
 }
@@ -578,7 +578,7 @@ img,svg{ max-width:100%; height:auto; }
 .nav-head h2{
   margin:0 0 10px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   font-size:clamp(2rem,3.2vw,2.6rem);
   text-align:left;
 }
@@ -616,7 +616,7 @@ img,svg{ max-width:100%; height:auto; }
 .nav-card h3{
   margin:0 0 8px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   font-size:1.1rem;
   color:var(--ink);
   text-align:left;
@@ -652,7 +652,7 @@ img,svg{ max-width:100%; height:auto; }
 .content-head h1{
   margin:0 0 12px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   font-size:clamp(2.4rem,4vw,3.2rem);
   text-align:left;
 }
@@ -682,7 +682,7 @@ img,svg{ max-width:100%; height:auto; }
 .content-card h3{
   margin:0 0 10px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   text-align:left;
 }
 .content-card p{
@@ -847,7 +847,7 @@ img,svg{ max-width:100%; height:auto; }
 .demo-copy h2{
   margin:0 0 6px 0;
   padding-left:0;
-  font-weight:400;
+  font-weight:500;
   text-align:left;
 }
 .demo-copy p{
