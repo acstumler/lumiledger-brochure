@@ -73,7 +73,7 @@ img,svg{ max-width:100%; height:auto; }
 }
 .cover-copy.invert h1{color:var(--ink); text-shadow:none; text-align:left;}
 .cover-copy.invert p{color:var(--muted); text-shadow:none; text-align:left; margin-left:0;}
-.cover-copy h1{margin:0 0 .6rem 0;font-size:clamp(2.2rem,4.5vw,3.5rem);line-height:1.2;font-weight:600;letter-spacing:.02em;text-transform:uppercase;text-align:left;color:var(--ink);white-space:nowrap}
+.cover-copy h1{margin:0 0 .6rem 0;font-size:clamp(1.8rem,3.8vw,3.2rem);line-height:1.2;font-weight:600;letter-spacing:.01em;text-transform:uppercase;text-align:left;color:var(--ink)}
 .cover-copy p{margin:0 0 1rem 0;color:var(--muted);font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.7;opacity:.95;max-width:1200px;text-align:left}
 .cover-position{margin-top:1rem!important;font-weight:600;text-align:left}
 
