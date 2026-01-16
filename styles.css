@@ -6,8 +6,8 @@
   --line:#e7e8ec;
   --line-bg: repeating-linear-gradient(180deg, rgba(14,15,17,.06) 0 1px, transparent 1px 48px);
   --page-pad: 1.5rem;
-  --gradA:#7d4dff;
-  --gradB:#15d1c1;
+  --gradA:#9a7dff;
+  --gradB:#5dd9cb;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -55,17 +55,23 @@ img,svg{ max-width:100%; height:auto; }
   min-height:100vh;
   display:flex;
   align-items:center;
-  background:linear-gradient(120deg,var(--gradA),var(--gradB));
+  background:transparent;
 }
 .cover-copy{
   position:relative;
   max-width:850px;
-  padding:0 var(--page-pad);
+  padding:2rem var(--page-pad);
   margin-left:clamp(18px,7vw,120px);
   padding-top:80px;
+  background:rgba(255,255,255,0.4);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-radius:24px;
+  border:1px solid rgba(255,255,255,0.5);
+  box-shadow:0 8px 32px rgba(0,0,0,0.08);
 }
-.cover-copy.invert h1{color:#fff}
-.cover-copy.invert p{color:rgba(255,255,255,.88)}
+.cover-copy.invert h1{color:var(--ink)}
+.cover-copy.invert p{color:var(--muted)}
 .cover-copy h1{margin:0 0 .6rem 0;font-size:clamp(2.8rem,5vw,4rem);line-height:1.3;font-weight:600;letter-spacing:.02em;text-transform:uppercase}
 .cover-copy p{margin:0 0 0 var(--subtitleIndent, 0.6rem);color:var(--muted);font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.7;opacity:.95;max-width:850px}
 .cover-position{margin-top:1rem!important;font-weight:600}
@@ -416,8 +422,7 @@ img,svg{ max-width:100%; height:auto; }
   display:flex;
   align-items:center;
   padding:64px var(--page-pad);
-  border-bottom:1px solid var(--line);
-  background:#fff;
+  background:transparent;
 }
 .why-inner{
   max-width:1100px;
@@ -425,6 +430,13 @@ img,svg{ max-width:100%; height:auto; }
   position:relative;
   z-index:1;
   width:100%;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-radius:24px;
+  padding:2rem;
+  border:1px solid rgba(255,255,255,0.8);
+  box-shadow:0 8px 32px rgba(0,0,0,0.06);
 }
 .why-head{
   margin-bottom:24px;
@@ -453,8 +465,7 @@ img,svg{ max-width:100%; height:auto; }
   display:flex;
   align-items:center;
   padding:64px var(--page-pad);
-  border-bottom:1px solid var(--line);
-  background:var(--paper);
+  background:transparent;
 }
 .thesis-inner{
   max-width:1100px;
@@ -462,6 +473,13 @@ img,svg{ max-width:100%; height:auto; }
   position:relative;
   z-index:1;
   width:100%;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-radius:24px;
+  padding:2rem;
+  border:1px solid rgba(255,255,255,0.8);
+  box-shadow:0 8px 32px rgba(0,0,0,0.06);
 }
 .thesis-head{
   margin-bottom:24px;
@@ -505,7 +523,7 @@ img,svg{ max-width:100%; height:auto; }
 .nav-section{
   position:relative;
   padding:64px var(--page-pad);
-  background:#fff;
+  background:transparent;
 }
 .nav-inner{
   max-width:1100px;
@@ -513,6 +531,13 @@ img,svg{ max-width:100%; height:auto; }
   position:relative;
   z-index:1;
   width:100%;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-radius:24px;
+  padding:2rem;
+  border:1px solid rgba(255,255,255,0.8);
+  box-shadow:0 8px 32px rgba(0,0,0,0.06);
 }
 .nav-head{
   margin-bottom:32px;
@@ -536,19 +561,22 @@ img,svg{ max-width:100%; height:auto; }
   gap:18px;
 }
 .nav-card{
-  background:#fff;
-  border:1px solid var(--line);
+  background:rgba(255,255,255,0.6);
+  border:1px solid rgba(255,255,255,0.7);
   border-radius:18px;
   padding:24px;
   text-decoration:none;
   color:var(--ink);
   transition:all .25s ease;
-  box-shadow:0 4px 12px rgba(14,15,17,.04);
+  box-shadow:0 4px 12px rgba(0,0,0,.04);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
 }
 .nav-card:hover{
   transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(14,15,17,.1);
-  border-color:rgba(125,77,255,.3);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  background:rgba(255,255,255,0.75);
+  border-color:rgba(154,125,255,.4);
 }
 .nav-card h3{
   margin:0 0 8px 0;
