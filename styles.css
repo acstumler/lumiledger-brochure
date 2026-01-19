@@ -1069,7 +1069,8 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:44px;height:44px}
   .brand-icon{height:30px}
-  .brand-line{gap:5px}
+  .brand-line{gap:7px}
+  .brand-link{gap:7px}
   .brand-word{
     font-size:1.25rem;
     gap:.38rem;
@@ -1169,7 +1170,8 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:40px;height:40px;border-radius:9px}
   .brand-icon{height:26px}
-  .brand-line{gap:4px}
+  .brand-line{gap:7px}
+  .brand-link{gap:7px}
   .brand-word{
     font-size:1.1rem;
     letter-spacing:.04em;
