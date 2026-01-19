@@ -122,13 +122,12 @@ img,svg{ max-width:100%; height:auto; }
   font-size:.85rem;
   text-decoration:none;
   transition:all .25s ease;
-  border:1px solid rgba(255,255,255,.25);
+  border:none;
   backdrop-filter:blur(4px);
   -webkit-backdrop-filter:blur(4px);
 }
 .btn-demo:hover{
   background:rgba(255,255,255,.28);
-  border-color:rgba(255,255,255,.4);
   transform:translateY(-1px);
   box-shadow:0 4px 12px rgba(255,255,255,.15);
 }
