@@ -35,6 +35,53 @@
     });
   }
 
+  // Hamburger menu functionality
+  var hamburgerBtn=document.getElementById('hamburgerBtn');
+  var navMenu=document.getElementById('navMenu');
+  var navOverlay=document.getElementById('navOverlay');
+  var navCloseBtn=document.getElementById('navCloseBtn');
+
+  function openMenu(){
+    if(hamburgerBtn) hamburgerBtn.classList.add('active');
+    if(navMenu) navMenu.classList.add('active');
+    if(navOverlay) navOverlay.classList.add('active');
+    document.body.style.overflow='hidden';
+    if(hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMenu(){
+    if(hamburgerBtn) hamburgerBtn.classList.remove('active');
+    if(navMenu) navMenu.classList.remove('active');
+    if(navOverlay) navOverlay.classList.remove('active');
+    document.body.style.overflow='';
+    if(hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  if(hamburgerBtn){
+    hamburgerBtn.addEventListener('click', function(){
+      if(navMenu && navMenu.classList.contains('active')){
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+  }
+
+  if(navCloseBtn){
+    navCloseBtn.addEventListener('click', closeMenu);
+  }
+
+  if(navOverlay){
+    navOverlay.addEventListener('click', closeMenu);
+  }
+
+  // Close menu on escape key
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape' && navMenu && navMenu.classList.contains('active')){
+      closeMenu();
+    }
+  });
+
   function toCells(line){
     var out=[], cur='', q=false;
     for(var i=0;i<line.length;i++){

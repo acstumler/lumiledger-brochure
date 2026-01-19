@@ -40,8 +40,40 @@
           </div>
         </a>
       </div>
-      <a href="https://calendly.com/alanson-stumler-lumiledger/lumiledger-demo" target="_blank" rel="noopener" class="btn-demo">Book a Demo</a>
+      <div class="header-actions">
+        <a href="https://calendly.com/alanson-stumler-lumiledger/lumiledger-demo" target="_blank" rel="noopener" class="btn-demo">Book a Demo</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
     </header>
+
+    <nav class="nav-menu" id="navMenu">
+      <div class="nav-menu-content">
+        <div class="nav-menu-header">
+          <span class="nav-menu-title">Navigation</span>
+          <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav-menu-list">
+          <li><a href="/index.html" class="nav-menu-link">Home</a></li>
+          <li><a href="/thesis.html" class="nav-menu-link">The Thesis</a></li>
+          <li><a href="/product-architecture.html" class="nav-menu-link">Product Architecture</a></li>
+          <li><a href="/user-behavior.html" class="nav-menu-link">User Behavior & Adoption</a></li>
+          <li><a href="/ai-accuracy.html" class="nav-menu-link">AI Accuracy & Compliance</a></li>
+          <li><a href="/marketing-strategy.html" class="nav-menu-link">Marketing Strategy</a></li>
+          <li><a href="/for-accountants.html" class="nav-menu-link">For Accounting Professionals</a></li>
+          <li><a href="/for-investors.html" class="nav-menu-link">For Investors & Partners</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <svg id="brochureSwoosh" class="brochure-swoosh" viewBox="0 0 1600 2048" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <g fill="none" stroke="#d5dce5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
