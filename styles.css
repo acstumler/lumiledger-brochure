@@ -98,13 +98,17 @@ img,svg{ max-width:100%; height:auto; }
   z-index:90;
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   padding:calc(8px + var(--safe-top)) 1.2rem 8px 1.2rem;
   border-radius:12px;
   background:rgba(10,10,10,.35);
   backdrop-filter:blur(12px) saturate(140%);
   -webkit-backdrop-filter:blur(12px) saturate(140%);
   border:1px solid rgba(255,255,255,.16);
+}
+.header-actions{
+  position:absolute;
+  right:1.2rem;
 }
 .header-actions{
   display:flex;
@@ -1034,6 +1038,9 @@ img,svg{ max-width:100%; height:auto; }
     right:8px;
     padding:calc(8px + var(--safe-top)) .9rem 8px .9rem;
   }
+  .header-actions{
+    right:.9rem;
+  }
   .brand-badge{width:48px;height:48px;border-radius:10px}
   .brand-icon{height:32px}
   .brand-word{font-size:1.25rem}
@@ -1064,9 +1071,13 @@ img,svg{ max-width:100%; height:auto; }
   .brochure-header{
     padding:calc(6px + var(--safe-top)) .7rem 6px .7rem;
   }
+  .header-actions{
+    right:.7rem;
+    gap:0.4rem;
+  }
   .brand-badge{width:44px;height:44px}
   .brand-icon{height:30px}
-  .brand-line{gap:10px}
+  .brand-line{gap:7px}
   .brand-word{
     font-size:1.25rem;
     gap:.38rem;
@@ -1083,9 +1094,6 @@ img,svg{ max-width:100%; height:auto; }
     line-height:1.05;
     max-width:4em;
     word-spacing:100vw;
-  }
-  .header-actions{
-    gap:0.4rem;
   }
   .btn-demo{
     padding:.35rem .7rem;
@@ -1164,9 +1172,13 @@ img,svg{ max-width:100%; height:auto; }
     top:6px;
     padding:calc(6px + var(--safe-top)) .6rem 6px .6rem;
   }
+  .header-actions{
+    right:.6rem;
+    gap:0.35rem;
+  }
   .brand-badge{width:40px;height:40px;border-radius:9px}
   .brand-icon{height:26px}
-  .brand-line{gap:9px}
+  .brand-line{gap:6px}
   .brand-word{
     font-size:1.1rem;
     letter-spacing:.04em;
@@ -1184,9 +1196,6 @@ img,svg{ max-width:100%; height:auto; }
     line-height:1.05;
     max-width:4em;
     word-spacing:100vw;
-  }
-  .header-actions{
-    gap:0.35rem;
   }
   .btn-demo{
     padding:.3rem .6rem;
