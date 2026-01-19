@@ -1069,24 +1069,15 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:44px;height:44px}
   .brand-icon{height:30px}
-  .brand-line{gap:3px}
-  .brand-link{gap:3px}
+  .brand-line{gap:4px}
+  .brand-link{gap:4px}
   .brand-word{
     font-size:1.25rem;
     gap:.38rem;
     align-items:center;
   }
   .brand-subtitle{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    font-size:.65em;
-    letter-spacing:.02em;
-    text-transform:lowercase;
-    color:rgba(255,255,255,.75);
-    line-height:1.05;
-    max-width:4em;
-    word-spacing:100vw;
+    display:none;
   }
   .btn-demo{
     padding:.35rem .7rem;
@@ -1170,8 +1161,8 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:40px;height:40px;border-radius:9px}
   .brand-icon{height:26px}
-  .brand-line{gap:3px}
-  .brand-link{gap:3px}
+  .brand-line{gap:4px}
+  .brand-link{gap:4px}
   .brand-word{
     font-size:1.1rem;
     letter-spacing:.04em;
@@ -1179,16 +1170,7 @@ img,svg{ max-width:100%; height:auto; }
     align-items:center;
   }
   .brand-subtitle{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    font-size:.65em;
-    letter-spacing:.02em;
-    text-transform:lowercase;
-    color:rgba(255,255,255,.75);
-    line-height:1.05;
-    max-width:4em;
-    word-spacing:100vw;
+    display:none;
   }
   .btn-demo{
     padding:.3rem .6rem;
