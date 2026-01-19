@@ -1075,11 +1075,11 @@ img,svg{ max-width:100%; height:auto; }
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-    font-size:.52em;
+    font-size:.65em;
     letter-spacing:.02em;
     text-transform:lowercase;
     color:rgba(255,255,255,.75);
-    line-height:1.1;
+    line-height:1.05;
     max-width:4em;
     word-spacing:100vw;
   }
@@ -1175,11 +1175,11 @@ img,svg{ max-width:100%; height:auto; }
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-    font-size:.52em;
+    font-size:.65em;
     letter-spacing:.02em;
     text-transform:lowercase;
     color:rgba(255,255,255,.75);
-    line-height:1.1;
+    line-height:1.05;
     max-width:4em;
     word-spacing:100vw;
   }
