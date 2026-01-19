@@ -109,7 +109,7 @@ img,svg{ max-width:100%; height:auto; }
 .header-actions{
   display:flex;
   align-items:center;
-  gap:0.75rem;
+  gap:0.5rem;
 }
 .btn-demo{
   display:inline-flex;
@@ -142,7 +142,7 @@ img,svg{ max-width:100%; height:auto; }
   padding:0;
   background:rgba(255,255,255,.18);
   border:1px solid rgba(255,255,255,.25);
-  border-radius:10px;
+  border-radius:50%;
   cursor:pointer;
   transition:all .25s ease;
   backdrop-filter:blur(4px);
@@ -1042,6 +1042,13 @@ img,svg{ max-width:100%; height:auto; }
     padding:.4rem .8rem;
     font-size:.8rem;
   }
+  .hamburger-btn{
+    width:38px;
+    height:38px;
+  }
+  .hamburger-line{
+    width:18px;
+  }
   .cover-copy{padding:90px clamp(1rem, 3vw, 2rem) 2rem}
   .problem,
   .gap,
@@ -1055,22 +1062,25 @@ img,svg{ max-width:100%; height:auto; }
 }
 @media (max-width:740px){
   .brochure-header{
-    padding:calc(6px + var(--safe-top)) .8rem 6px .8rem;
+    padding:calc(6px + var(--safe-top)) .7rem 6px .7rem;
   }
   .brand-badge{width:44px;height:44px}
   .brand-icon{height:30px}
   .brand-word{font-size:1.15rem}
   .brand-subtitle{font-size:.68em}
+  .header-actions{
+    gap:0.4rem;
+  }
   .btn-demo{
-    padding:.38rem .75rem;
-    font-size:.78rem;
+    padding:.35rem .7rem;
+    font-size:.76rem;
   }
   .hamburger-btn{
     width:36px;
     height:36px;
   }
   .hamburger-line{
-    width:18px;
+    width:17px;
   }
   .nav-menu{
     width:min(90vw, 380px);
@@ -1136,24 +1146,26 @@ img,svg{ max-width:100%; height:auto; }
     left:8px;
     right:8px;
     top:6px;
-    padding:calc(6px + var(--safe-top)) .7rem 6px .7rem;
+    padding:calc(6px + var(--safe-top)) .6rem 6px .6rem;
   }
   .brand-badge{width:40px;height:40px;border-radius:9px}
   .brand-icon{height:26px}
   .brand-word{font-size:1rem;letter-spacing:.04em}
   .brand-subtitle{font-size:.65em}
+  .header-actions{
+    gap:0.35rem;
+  }
   .btn-demo{
-    padding:.32rem .65rem;
-    font-size:.72rem;
+    padding:.3rem .6rem;
+    font-size:.7rem;
     border-radius:14px;
   }
   .hamburger-btn{
     width:34px;
     height:34px;
-    border-radius:8px;
   }
   .hamburger-line{
-    width:16px;
+    width:15px;
     margin:2px 0;
   }
   .nav-menu{
