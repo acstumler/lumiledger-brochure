@@ -34,8 +34,8 @@ img,svg{ max-width:100%; height:auto; }
 .brand-icon{height:40px;width:auto;display:block}
 .brand-word{
   display:flex;
-  align-items:center;
-  gap:.5rem;
+  align-items:baseline;
+  gap:.4rem;
   font-weight:400;
   letter-spacing:.05em;
   font-size:1.6rem;
@@ -44,17 +44,11 @@ img,svg{ max-width:100%; height:auto; }
   color:#fff;
 }
 .brand-subtitle{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  font-size:.42em;
+  font-size:.75em;
   font-weight:400;
-  letter-spacing:.02em;
-  text-transform:lowercase;
-  color:rgba(255,255,255,.75);
-  line-height:1.15;
-  max-width:4em;
-  word-spacing:100vw;
+  letter-spacing:.01em;
+  text-transform:none;
+  color:rgba(255,255,255,.8);
 }
 
 .cover{
@@ -1042,8 +1036,8 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:48px;height:48px;border-radius:10px}
   .brand-icon{height:32px}
-  .brand-word{font-size:1.25rem;gap:.4rem}
-  .brand-subtitle{font-size:.42em}
+  .brand-word{font-size:1.25rem}
+  .brand-subtitle{font-size:.7em}
   .btn-demo{
     padding:.4rem .8rem;
     font-size:.8rem;
@@ -1072,8 +1066,23 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:44px;height:44px}
   .brand-icon{height:30px}
-  .brand-word{font-size:1.15rem;gap:.38rem}
-  .brand-subtitle{font-size:.42em}
+  .brand-word{
+    font-size:1.15rem;
+    gap:.38rem;
+    align-items:center;
+  }
+  .brand-subtitle{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    font-size:.42em;
+    letter-spacing:.02em;
+    text-transform:lowercase;
+    color:rgba(255,255,255,.75);
+    line-height:1.15;
+    max-width:4em;
+    word-spacing:100vw;
+  }
   .header-actions{
     gap:0.4rem;
   }
@@ -1156,8 +1165,24 @@ img,svg{ max-width:100%; height:auto; }
   }
   .brand-badge{width:40px;height:40px;border-radius:9px}
   .brand-icon{height:26px}
-  .brand-word{font-size:1rem;letter-spacing:.04em;gap:.35rem}
-  .brand-subtitle{font-size:.42em}
+  .brand-word{
+    font-size:1rem;
+    letter-spacing:.04em;
+    gap:.35rem;
+    align-items:center;
+  }
+  .brand-subtitle{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    font-size:.42em;
+    letter-spacing:.02em;
+    text-transform:lowercase;
+    color:rgba(255,255,255,.75);
+    line-height:1.15;
+    max-width:4em;
+    word-spacing:100vw;
+  }
   .header-actions{
     gap:0.35rem;
   }
