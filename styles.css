@@ -572,7 +572,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:60vh;
   display:flex;
   align-items:center;
-  padding:120px var(--page-pad) 64px;
+  padding:80px var(--page-pad) 64px;
   background:transparent;
 }
 .why-inner{
@@ -621,7 +621,7 @@ img,svg{ max-width:100%; height:auto; }
 /* Positioning Line Section */
 .positioning-section{
   position:relative;
-  padding:80px var(--page-pad) 40px;
+  padding:50px var(--page-pad) 40px;
   background:transparent;
 }
 .positioning-inner{
@@ -645,7 +645,7 @@ img,svg{ max-width:100%; height:auto; }
   min-height:60vh;
   display:flex;
   align-items:center;
-  padding:120px var(--page-pad) 64px;
+  padding:80px var(--page-pad) 64px;
   background:transparent;
 }
 .thesis-inner{
@@ -700,7 +700,7 @@ img,svg{ max-width:100%; height:auto; }
 
 .nav-section{
   position:relative;
-  padding:120px var(--page-pad) 64px;
+  padding:80px var(--page-pad) 64px;
   background:transparent;
 }
 .nav-inner{
@@ -739,7 +739,7 @@ img,svg{ max-width:100%; height:auto; }
 .nav-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:6px;
+  gap:8px;
 }
 .nav-card{
   background:rgba(255,255,255,0.6);
